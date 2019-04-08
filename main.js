@@ -90,7 +90,7 @@ function check() {
     var v1h = document.dataclass.v1h.value;
     var v1i = document.dataclass.v1i.value;
     var v1j = document.dataclass.v1j.value;
-    var v1k = document.dataclass.v1k.value;    
+    var v1k = document.dataclass.v1k.value;
     var v1l = document.dataclass.v1l.value;
     var v23a = document.dataclass.v23a.value;
     var v23b = document.dataclass.v23b.value;
@@ -178,7 +178,7 @@ function check() {
     }
 
     v1234total = v1total + v23total + v4total
-    
+
     if (v1234total >= 6 ) {
         confidrisk = "VERY HIGH"
     } else if ((v1234total >= 2 && v1234total < 6) || v5 == 1 || v6 == 1 || v7 == 1 || v8 == 1) {
@@ -196,12 +196,3 @@ function check() {
     document.getElementById("integrity").innerHTML = "Integrity risk is " + integrisk;
     document.getElementById("confidentiality").innerHTML = "Confidentiality risk is " + confidrisk;
 }
-
-
-
-
-
-
-
-
-
