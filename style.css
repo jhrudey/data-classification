@@ -1,20 +1,23 @@
+
+h1 {
+  margin-left: 20px;
+}
+
 #dataclass {
   margin-left: 10px;
   background: #d2def2;
   padding: 10px 20px 10px 20px;
+  width: 100%;
   border-radius: 20px;
   float: left;
 }
+
 
 input {
   margin-bottom: 20px;
   display: block;
 }
 
-h2 {
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
 
 p.font-weight-bold {
   padding-top: 10px;
