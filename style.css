@@ -1,117 +1,113 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
 #dataclass {
-	margin-left: 10px;
-	background: #d2def2;
-	padding: 10px 20px 10px 20px;
-	width: 1000px;
-	border-radius: 20px;
-	float: left;
+  margin-left: 10px;
+  background: #d2def2;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  float: left;
 }
 
 input {
-	margin-bottom: 20px;
-	display: block;
+  margin-bottom: 20px;
+  display: block;
 }
 
-h2.title {
-    font-size: 30px;
+h2 {
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
-.questions {
-    font-size: 18px;
+p.font-weight-bold {
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
-#button {
-	background: green;
-	border: none;
-	border-radius: 5px;
-	padding: 10px;
-	color: white;
-	font-size: 16px;
-	transition-duration: .5s;
-	margin-top: 15px;
+#submitbtn {
+  background: green;
+  transition-duration: .5s;
+  margin-top: 15px;
 }
 
-
-#button:hover {
-	background: white;
-	border: 1px solid green;
-	color: black;
-	cursor: pointer;
+#submitbtn:hover {
+  background: white;
+  border: 1px solid green;
+  color: black;
+  cursor: pointer;
 }
 
 .mc {
-	display: inline;
-} 
+  display: inline;
+}
 
 .list {
-    margin: 0 0 0 25px;
-    padding: 0;
-} 
+  margin: 0 0 0 25px;
+  padding: 0;
+}
 
 .info {
-    font-style: italic;
-    margin: 0 0 25px 10px;
-    padding: 0;
+  font-style: italic;
+  margin: 0 0 25px 10px;
+  padding: 0;
 }
 
 #followuppreg {
-    margin-bottom: 20px;
-    margin-left: 50px;
-    display: none;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: none;
 }
 
 #followuphealth {
-    margin-bottom: 20px;
-    margin-left: 50px;
-    display: none;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: none;
 }
 
 #followupexp {
-    margin-bottom: 20px;
-    margin-left: 50px;
-    display: none;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: none;
 }
 
 #followupses {
-    margin-bottom: 20px;
-    margin-left: 50px;
-    display: none;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: none;
 }
 
 #followupobs {
-    margin-bottom: 20px;
-    margin-left: 50px;
-    display: none;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: none;
 }
 
 #followupobsav {
-    margin-bottom: 20px;
-    margin-left: 80px;
-    display: none;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  display: none;
 }
 
 #followupquest {
-    margin-bottom: 20px;
-    margin-left: 50px;
-    display: none;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: none;
 }
 
 #followupqual {
-    margin-bottom: 20px;
-    margin-left: 50px;
-    display: none;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: none;
 }
 
 #followupqualav {
-    margin-bottom: 20px;
-    margin-left: 80px;
-    display: none;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  display: none;
 }
 
 #after_submit {
-	visibility: hidden;
+  background: #ffd700;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  visibility: hidden;
 }
