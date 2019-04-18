@@ -1,49 +1,4 @@
-//revealing conditional fields
 
-function followuppreg() {
-    document.getElementById("followuppreg").style.display = "block";
-    document.getElementById("preg").style.marginBottom = "0";
-}
-
-function followuphealth() {
-    document.getElementById("followuphealth").style.display = "block";
-    document.getElementById("health").style.marginBottom = "0";
-}
-
-function followupexp() {
-    document.getElementById("followupexp").style.display = "block";
-    document.getElementById("exp").style.marginBottom = "0";
-}
-
-function followupses() {
-    document.getElementById("followupses").style.display = "block";
-    document.getElementById("ses").style.marginBottom = "0";
-}
-
-function followupobs() {
-    document.getElementById("followupobs").style.display = "block";
-    document.getElementById("obs").style.marginBottom = "0";
-}
-
-function followupobsav() {
-    document.getElementById("followupobsav").style.display = "block";
-    document.getElementById("obsav").style.marginBottom = "0";
-}
-
-function followupquest() {
-    document.getElementById("followupquest").style.display = "block";
-    document.getElementById("quest").style.marginBottom = "0";
-}
-
-function followupqual() {
-    document.getElementById("followupqual").style.display = "block";
-    document.getElementById("qual").style.marginBottom = "0";
-}
-
-function followupqualav() {
-    document.getElementById("followupqualav").style.display = "block";
-    document.getElementById("qualav").style.marginBottom = "0";
-}
 
 //submission and answers for classification
 

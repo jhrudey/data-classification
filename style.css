@@ -58,10 +58,22 @@ p.font-weight-bold {
   display: none;
 }
 
+#preg:checked ~ #followuppreg {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: block;
+}
+
 #followuphealth {
   margin-bottom: 20px;
   margin-left: 50px;
   display: none;
+}
+
+#health:checked ~ #followuphealth {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: block;
 }
 
 #followupexp {
@@ -70,10 +82,22 @@ p.font-weight-bold {
   display: none;
 }
 
+#exp:checked ~ #followupexp {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: block;
+}
+
 #followupses {
   margin-bottom: 20px;
   margin-left: 50px;
   display: none;
+}
+
+#ses:checked ~ #followupses {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: block;
 }
 
 #followupobs {
@@ -82,16 +106,35 @@ p.font-weight-bold {
   display: none;
 }
 
+#obs:checked ~ #followupobs {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: block;
+}
+
 #followupobsav {
   margin-bottom: 20px;
   margin-left: 80px;
   display: none;
 }
 
+#obsav:checked ~ #followupobsav {
+  margin-bottom: 20px;
+  margin-left: 80px;
+  display: block;
+}
+
+
 #followupquest {
   margin-bottom: 20px;
   margin-left: 50px;
   display: none;
+}
+
+#quest:checked ~ #followupquest {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: block;
 }
 
 #followupqual {
@@ -100,10 +143,22 @@ p.font-weight-bold {
   display: none;
 }
 
+#qual:checked ~ #followupqual {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: block;
+}
+
 #followupqualav {
   margin-bottom: 20px;
   margin-left: 80px;
   display: none;
+}
+
+#qualav:checked ~ #followupqualav {
+  margin-bottom: 20px;
+  margin-left: 80px;
+  display: block;
 }
 
 #after_submit {
