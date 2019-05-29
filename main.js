@@ -151,3 +151,11 @@ function check() {
     document.getElementById("integrity").innerHTML = "Integrity risk is " + integrisk;
     document.getElementById("confidentiality").innerHTML = "Confidentiality risk is " + confidrisk;
 }
+
+//export input as word document
+
+jQuery(document).ready(function($) {
+  $("button.word-export").click(function(event) {
+    $("#page-content").wordExport();
+  });
+});

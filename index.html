@@ -14,14 +14,14 @@
   <title class="title">Data Classification</title>
 </head>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-
-      <body>
-        <h1>Data Classification For Your Research Data</h1>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
 
         <form id="dataclass" name="dataclass">
+          <div id ="export-content">
+          <h1>Data Classification For Your Research Data</h1>
           <div class="accordion" id="accordionExample">
             <div class="card bg-transparent border-0">
               <div class="card-header" id="headingOne">
@@ -101,16 +101,16 @@
               <div class="card-header" id="headingThree">
                 <h2 class="mb-0">
                   <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <h2 class="font-weight-bold">Confidentiality Risk</h2>
-                </button>
-              </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body">
+                    <h2 class="font-weight-bold">Confidentiality Risk</h2>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
                   <p class="font-weight-bold">How would you describe your participants (multiple answers possible)?</p>
                   <input class="mc" type="checkbox" name="v1a" value=1> Healthy adults<br>
                   <input class="mc" type="checkbox" name="v1b" value=1> Healthy children<br>
-                  <input class="mc" id="preg" type="checkbox" name="v1c" value=1 > Pregnant women <br>
+                  <input class="mc" id="preg" type="checkbox" name="v1c" value=1> Pregnant women <br>
                   <div id="followuppreg">
                     <p class="font-weight-bold">Is the nature of the research something where pregnant women may be judged on their
                       behaviours/health-status, e.g. smoking during pregnancy?</p>
@@ -151,7 +151,7 @@
                   </ul><br>
                   <p class="info">NB: health-related data and physical measurements are addressed separately</p>
 
-                  <input class="mc" id="health" type="checkbox" name="v23c" value=1 >Health-related
+                  <input class="mc" id="health" type="checkbox" name="v23c" value=1>Health-related
                   data and physical measurements<br>
                   <div id="followuphealth">
                     <p class="font-weight-bold">What kind of health-related/physical data will be collected (multiple answers
@@ -191,7 +191,7 @@
                     <input class="mc" type="checkbox" name="v23c19" value=1> Illicit drug use<br>
                   </div>
 
-                  <input class="mc" id="exp" type="checkbox" name="v23d" value=1 >Experimental data<br>
+                  <input class="mc" id="exp" type="checkbox" name="v23d" value=1>Experimental data<br>
                   <div id="followupexp">
                     <p class="font-weight-bold">What kind of experimental data will be collected (multiple answers possible)?</p>
                     <input class="mc" type="checkbox" name="v23d1" value=1> If not recorded under health-related data,
@@ -204,7 +204,7 @@
                     <input class="mc" type="checkbox" name="v23d5" value=1> Financial games<br>
                   </div>
 
-                  <input class="mc" id="ses" type="checkbox" name="v23e" value=1 >Social-economic
+                  <input class="mc" id="ses" type="checkbox" name="v23e" value=1>Social-economic
                   information<br>
                   <div id="followupses">
                     <p class="font-weight-bold">What kind of experimental data will be collected (multiple answers possible)?</p>
@@ -219,11 +219,11 @@
 
                   <input class="mc" type="checkbox" name="v23f" value=1>Academic performance/exam scores<br>
 
-                  <input class="mc" id="obs" type="checkbox" name="v23g" value=1 >Observational data<br>
+                  <input class="mc" id="obs" type="checkbox" name="v23g" value=1>Observational data<br>
                   <div id="followupobs">
                     <p class="font-weight-bold">Are audiovisual recordings made of the observation?</p>
                     <input class="mc" type="radio" name="v23g1" value=1> No, an observer will only take notes<br>
-                    <input class="mc" id="obsav" type="radio" name="v23g1" value=2 > Yes,
+                    <input class="mc" id="obsav" type="radio" name="v23g1" value=2> Yes,
                     audiovisual data will be recorded<br>
                     <div id="followupobsav">
                       <p class="font-weight-bold">Could the subject matter addressed in the audiovisual data be considered
@@ -233,7 +233,7 @@
                     </div>
                   </div>
 
-                  <input class="mc" id="quest" type="checkbox" name="v23h" value=1 >Questionnaire
+                  <input class="mc" id="quest" type="checkbox" name="v23h" value=1>Questionnaire
                   data<br>
                   <div id="followupquest">
                     <p class="font-weight-bold">Could topics addressed in the questionnaire be considered sensitive (i.e. if a
@@ -252,14 +252,14 @@
                     <input class="mc" type="radio" name="v23h3" value=2> No<br>
                   </div>
 
-                  <input class="mc" id="qual" type="checkbox" name="v23i" value=1 >Qualitative data,
+                  <input class="mc" id="qual" type="checkbox" name="v23i" value=1>Qualitative data,
                   namely
                   interviews<br>
                   <div id="followupqual">
                     <p class="font-weight-bold">Is the interview recorded on an audiovisual medium?</p>
                     <input class="mc" type="radio" name="v23i1" value=1> No, an assistant writes a transcript during the
                     interview<br>
-                    <input class="mc" id="qualav" type="radio" name="v23i1" value=2 > Yes, the
+                    <input class="mc" id="qualav" type="radio" name="v23i1" value=2> Yes, the
                     interview is
                     recorded on an audiovisual medium<br>
                     <div id="followupqualav">
@@ -306,24 +306,28 @@
               </div>
             </div>
           </div>
-              <button type="button" class="btn btn-lg btn-success" id="submitbtn" onclick="check();">Submit</button>
+          <button type="button" class="btn btn-lg btn-success" id="submitbtn" onclick="check();">Submit</button>
+          <button class="word-export" href="javascript:void(0)"> Export as .doc </button>
+        </div>
+        </form>
+      </div>
+
+      <div class="col-sm-3" id="after_submit">
+        <p class="font-weight-bold" id="availability"></p>
+        <p class="font-weight-bold" id="integrity"></p>
+        <p class="font-weight-bold" id="confidentiality"></p>
+      </div>
     </div>
-
-    <div class="col-sm-3" id="after_submit">
-      <p class="font-weight-bold" id="availability"></p>
-      <p class="font-weight-bold" id="integrity"></p>
-      <p class="font-weight-bold" id="confidentiality"></p>
-    </div>
-  </div>
-
-  </form>
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="jquery-3.3.1.slim.min.js"></script>
-  <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Local JavaScript -->
-  <script src="main.js"></script>
-  </body>
 </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="FileSaver.js"></script>
+    <script src="jquery.wordexport.js"></script>
+    <!-- Local JavaScript -->
+    <script src="main.js"></script>
+</body>
+
 
 </html>
