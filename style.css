@@ -36,10 +36,24 @@ p.font-weight-bold {
   color: black;
   cursor: pointer;
 }
+#printbtn {
+  background: green;
+  transition-duration: .5s;
+  margin-top: 15px;
+}
+
+#printbtn:hover {
+  background: white;
+  border: 1px solid green;
+  color: black;
+  cursor: pointer;
+}
 
 .mc {
   display: inline;
 }
+
+
 
 .list {
   margin: 0 0 0 25px;

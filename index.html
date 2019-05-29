@@ -15,318 +15,301 @@
 </head>
 
 <body>
+
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-8">
+        <div id="printJS-form">
 
-        <form id="dataclass" name="dataclass">
-          <div id ="export-content">
-          <h1>Data Classification For Your Research Data</h1>
-          <div class="accordion" id="accordionExample">
+          <form id="dataclass" name="dataclass">
+
+            <h1>Data Classification For Your Research Data</h1>
             <div class="card bg-transparent border-0">
               <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <h2 class="font-weight-bold">Availability Risk</h2>
-                  </button>
+                <h2 class="font-weight-bold">Availability Risk</h2>
                 </h2>
               </div>
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p class="font-weight-bold">How many users will have access to the data?</p>
-                  <input class="mc" type="radio" name="b1" value=1> 10 or more<br>
-                  <input class="mc" type="radio" name="b1" value=2> 3 to 9<br>
-                  <input class="mc" type="radio" name="b1" value=3> 2 or fewer<br>
+              <div class="card-body">
+                <p class="font-weight-bold">How many users will have access to the data?</p>
+                <input class="mc" type="radio" name="b1" value=1>10 or more<br>
+                <input class="mc" type="radio" name="b1" value=2>3 to 9<br>
+                <input class="mc" type="radio" name="b1" value=3>2 or fewer<br>
 
-                  <p class="font-weight-bold">When does your data need to be accessible?</p>
-                  <input class="mc" type="radio" name="b2" value=1> 24/7<br>
-                  <input class="mc" type="radio" name="b2" value=2> Work hours (9-5, Mon-Fri)<br>
-                  <input class="mc" type="radio" name="b2" value=3> Infrenquently<br>
+                <p class="font-weight-bold">When does your data need to be accessible?</p>
+                <input class="mc" type="radio" name="b2" value=1> 24/7<br>
+                <input class="mc" type="radio" name="b2" value=2> Work hours (9-5, Mon-Fri)<br>
+                <input class="mc" type="radio" name="b2" value=3> Infrenquently<br>
 
-                  <p class="font-weight-bold">How long would data need to be inaccessible for your research project to suffer harm (such
-                    as financial costs, reputational damage etc.)? </p>
-                  <input class="mc" type="radio" name="b3" value=1> Up to one hour<br>
-                  <input class="mc" type="radio" name="b3" value=2> Up to one day<br>
-                  <input class="mc" type="radio" name="b3" value=3> Up to one week<br>
+                <p class="font-weight-bold">How long would data need to be inaccessible for your research project to suffer harm (such
+                  as financial costs, reputational damage etc.)? </p>
+                <input class="mc" type="radio" name="b3" value=1> Up to one hour<br>
+                <input class="mc" type="radio" name="b3" value=2> Up to one day<br>
+                <input class="mc" type="radio" name="b3" value=3> Up to one week<br>
 
-                  <p class="font-weight-bold">Are there moments where interruptions to data access would be detrimental?</p>
-                  <input class="mc" type="radio" name="b4" value=1> Yes<br>
-                  <input class="mc" type="radio" name="b4" value=2> No<br>
-                </div>
+                <p class="font-weight-bold">Are there moments where interruptions to data access would be detrimental?</p>
+                <input class="mc" type="radio" name="b4" value=1> Yes<br>
+                <input class="mc" type="radio" name="b4" value=2> No<br>
               </div>
             </div>
             <div class="card bg-transparent border-0">
               <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <h2 class="font-weight-bold">Integrity Risk</h2>
-                  </button>
+                <h2 class="font-weight-bold">Integrity Risk</h2>
                 </h2>
               </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p class="font-weight-bold">If errors are introduced to the data, or unauthorized changes are made to the data, is
-                    there a risk of incorrect research conclusions? </p>
-                  <input class="mc" type="radio" name="i1" value=1> Yes and the risk is high<br>
-                  <input class="mc" type="radio" name="i1" value=2> Yes, but the risk of this is low<br>
-                  <input class="mc" type="radio" name="i1" value=3> There is no risk of this happening<br>
+              <div class="card-body">
+                <p class="font-weight-bold">If errors are introduced to the data, or unauthorized changes are made to the data, is
+                  there a risk of incorrect research conclusions? </p>
+                <input class="mc" type="radio" name="i1" value=1> Yes and the risk is high<br>
+                <input class="mc" type="radio" name="i1" value=2> Yes, but the risk of this is low<br>
+                <input class="mc" type="radio" name="i1" value=3> There is no risk of this happening<br>
 
-                  <p class="font-weight-bold">If errors are introduced to the data, or unauthorized changes are made to the data, is
-                    there a risk of delaying completion of a research project (e.g. extra time would be required to investigate
-                    and correct the mistakes)?</p>
-                  <input class="mc" type="radio" name="i2" value=1> Yes, the project would be delayed<br>
-                  <input class="mc" type="radio" name="i2" value=2> Yes, but we have planned sufficient time for data cleaning<br>
-                  <input class="mc" type="radio" name="i2" value=3> No, this will not delay the project <br>
+                <p class="font-weight-bold">If errors are introduced to the data, or unauthorized changes are made to the data, is
+                  there a risk of delaying completion of a research project (e.g. extra time would be required to investigate
+                  and correct the mistakes)?</p>
+                <input class="mc" type="radio" name="i2" value=1> Yes, the project would be delayed<br>
+                <input class="mc" type="radio" name="i2" value=2> Yes, but we have planned sufficient time for data cleaning<br>
+                <input class="mc" type="radio" name="i2" value=3> No, this will not delay the project <br>
 
-                  <p class="font-weight-bold">Do you require automatic back-ups of the data?</p>
-                  <input class="mc" type="radio" name="i3" value=1> Yes<br>
-                  <input class="mc" type="radio" name="i3" value=2> No<br>
+                <p class="font-weight-bold">Do you require automatic back-ups of the data?</p>
+                <input class="mc" type="radio" name="i3" value=1> Yes<br>
+                <input class="mc" type="radio" name="i3" value=2> No<br>
 
-                  <p class="font-weight-bold">How long do the data need to be stored?</p>
-                  <input class="mc" type="radio" name="i5" value=1> 10 years after the last publication (non-WMO research)<br>
-                  <input class="mc" type="radio" name="i5" value=2> 15 years after the last publication (WMO research)<br>
-                  <input class="mc" type="radio" name="i5" value=3> 25 years after the last publication (GCP research)<br>
-                  <input class="mc" type="radio" name="i5" value=4> Indefinitely<br>
+                <p class="font-weight-bold">How long do the data need to be stored?</p>
+                <input class="mc" type="radio" name="i5" value=1> 10 years after the last publication (non-WMO research)<br>
+                <input class="mc" type="radio" name="i5" value=2> 15 years after the last publication (WMO research)<br>
+                <input class="mc" type="radio" name="i5" value=3> 25 years after the last publication (GCP research)<br>
+                <input class="mc" type="radio" name="i5" value=4> Indefinitely<br>
 
-                  <p class="font-weight-bold">If there are errors in the data, could this have an impact on your research participants
-                    (e.g. inappropriate questions are posed in a follow-up questionnaire; participants need to be contacted
-                    repeatedly to correct mistakes etc.)?</p>
-                  <input class="mc" type="radio" name="i8" value=1> Yes and the impact is serious<br>
-                  <input class="mc" type="radio" name="i8" value=2> Yes, but the impact is minimal<br>
-                  <input class="mc" type="radio" name="i8" value=3> No, there is no impact on participants <br>
-                </div>
+                <p class="font-weight-bold">If there are errors in the data, could this have an impact on your research participants
+                  (e.g. inappropriate questions are posed in a follow-up questionnaire; participants need to be contacted
+                  repeatedly to correct mistakes etc.)?</p>
+                <input class="mc" type="radio" name="i8" value=1> Yes and the impact is serious<br>
+                <input class="mc" type="radio" name="i8" value=2> Yes, but the impact is minimal<br>
+                <input class="mc" type="radio" name="i8" value=3> No, there is no impact on participants <br>
               </div>
             </div>
             <div class="card bg-transparent border-0">
               <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <h2 class="font-weight-bold">Confidentiality Risk</h2>
-                  </button>
+                <h2 class="font-weight-bold">Confidentiality Risk</h2>
                 </h2>
               </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p class="font-weight-bold">How would you describe your participants (multiple answers possible)?</p>
-                  <input class="mc" type="checkbox" name="v1a" value=1> Healthy adults<br>
-                  <input class="mc" type="checkbox" name="v1b" value=1> Healthy children<br>
-                  <input class="mc" id="preg" type="checkbox" name="v1c" value=1> Pregnant women <br>
-                  <div id="followuppreg">
-                    <p class="font-weight-bold">Is the nature of the research something where pregnant women may be judged on their
-                      behaviours/health-status, e.g. smoking during pregnancy?</p>
-                    <input class="mc" type="radio" name="v1c1" value=1> Yes <br>
-                    <input class="mc" type="radio" name="v1c1" value=2> No <br>
-                  </div>
-                  <input class="mc" type="checkbox" name="v1d" value=1> Adult patients (i.e. having any medical condition, mental
-                  or physical; not necessarily inpatients)<br>
-                  <input class="mc" type="checkbox" name="v1e" value=1> Pediatric patients (i.e. having any medical condition,
-                  mental or physical; not necessarily inpatients)<br>
-                  <input class="mc" type="checkbox" name="v1f" value=1> LGBTQ+ individuals<br>
-                  <input class="mc" type="checkbox" name="v1g" value=1> Refugees<br>
-                  <input class="mc" type="checkbox" name="v1h" value=1> Sex workers<br>
-                  <input class="mc" type="checkbox" name="v1i" value=1> Felons or other individuals with a criminal history<br>
-                  <input class="mc" type="checkbox" name="v1j" value=1> Physically-impaired individuals<br>
-                  <input class="mc" type="checkbox" name="v1k" value=1> Mentally-impaired individuals<br>
-                  <input class="mc" type="checkbox" name="v1l" value=1> Racial, religious, ethic or other visible minority<br>
-
-                  <p class="font-weight-bold">Which of the following best describes the data you are collecting (multiple answers
-                    possible)?</p>
-                  <input class="mc" type="checkbox" name="v23a" value=1>Directly identifying information, including:<br>
-                  <ul class="list">
-                    <li>Name</li>
-                    <li>Address, e-mail address</li>
-                    <li>IP-address, MAC-address</li>
-                    <li>Birthdate</li>
-                    <li>BSN</li>
-                  </ul><br>
-                  <input class="mc" type="checkbox" name="v23b" value=1>"Special" data, as defined by the GDPR, including:<br>
-                  <ul class="list">
-                    <li>Genetic data</li>
-                    <li>Race or ethnicity</li>
-                    <li>Religion, philosophy or other beliefs</li>
-                    <li>Sexual preferences</li>
-                    <li>Criminal activity</li>
-                    <li>Union memberships</li>
-                    <li>Political opinions</li>
-                  </ul><br>
-                  <p class="info">NB: health-related data and physical measurements are addressed separately</p>
-
-                  <input class="mc" id="health" type="checkbox" name="v23c" value=1>Health-related
-                  data and physical measurements<br>
-                  <div id="followuphealth">
-                    <p class="font-weight-bold">What kind of health-related/physical data will be collected (multiple answers
-                      possible)?</p>
-                    <input class="mc" type="checkbox" name="v23c1" value=1> Height, weight, waist circumference, body fat
-                    and
-                    other
-                    related measures<br>
-                    <input class="mc" type="checkbox" name="v23c2" value=1> Cardiovascular measurements (e.g. blood
-                    pressure,
-                    heart
-                    rate, cardiac output, ECGs)<br>
-                    <input class="mc" type="checkbox" name="v23c3" value=1> VU Ambulatory Monitoring System data (e.g.
-                    circadian
-                    rhythms, sleep-wake cycle, response to stressors)<br>
-                    <input class="mc" type="checkbox" name="v23c4" value=1> Exercise capacity (e.g. VO2 Max)<br>
-                    <input class="mc" type="checkbox" name="v23c5" value=1> Accelerometry<br>
-                    <input class="mc" type="checkbox" name="v23c6" value=1> Pulmonary function testing<br>
-                    <input class="mc" type="checkbox" name="v23c7" value=1> Blood tests (levels of: glucose, cholesterol,
-                    fatty
-                    acids, vitamins, hormones etc.)<br>
-                    <input class="mc" type="checkbox" name="v23c8" value=1> Neurological imaging (e.g. fMRI)<br>
-                    <input class="mc" type="checkbox" name="v23c9" value=1> Other neurological testing (e.g. EEGs, facial
-                    cues,
-                    eye-tracking, reaction times)<br>
-                    <input class="mc" type="checkbox" name="v23c10" value=1> Tongue positioning/non-nutritive sucking<br>
-                    <input class="mc" type="checkbox" name="v23c11" value=1> Genetic risk factors for disease<br>
-                    <input class="mc" type="checkbox" name="v23c12" value=1> Mental health, stress, well-being,
-                    self-efficacy,
-                    personality traits<br>
-                    <input class="mc" type="checkbox" name="v23c13" value=1> History of mental or physical abuse<br>
-                    <input class="mc" type="checkbox" name="v23c14" value=1> Known medical conditions/diagnoses<br>
-                    <input class="mc" type="checkbox" name="v23c15" value=1> Medications (including herbals and supplements)<br>
-                    <input class="mc" type="checkbox" name="v23c16" value=1> Family history<br>
-                    <input class="mc" type="checkbox" name="v23c17" value=1> Smoking status<br>
-                    <input class="mc" type="checkbox" name="v23c18" value=1> Alcohol consumption<br>
-                    <input class="mc" type="checkbox" name="v23c19" value=1> Illicit drug use<br>
-                  </div>
-
-                  <input class="mc" id="exp" type="checkbox" name="v23d" value=1>Experimental data<br>
-                  <div id="followupexp">
-                    <p class="font-weight-bold">What kind of experimental data will be collected (multiple answers possible)?</p>
-                    <input class="mc" type="checkbox" name="v23d1" value=1> If not recorded under health-related data,
-                    neurological
-                    imaging (e.g. fMRI)<br>
-                    <input class="mc" type="checkbox" name="v23d2" value=1> If not recorded under health-related data, other
-                    neurological testing (e.g. EEGs, facial cues, eye-tracking, reaction times)<br>
-                    <input class="mc" type="checkbox" name="v23d3" value=1> Speech analysis<br>
-                    <input class="mc" type="checkbox" name="v23d4" value=1> Testing of executive function<br>
-                    <input class="mc" type="checkbox" name="v23d5" value=1> Financial games<br>
-                  </div>
-
-                  <input class="mc" id="ses" type="checkbox" name="v23e" value=1>Social-economic
-                  information<br>
-                  <div id="followupses">
-                    <p class="font-weight-bold">What kind of experimental data will be collected (multiple answers possible)?</p>
-                    <input class="mc" type="checkbox" name="v23e1" value=1> Age<br>
-                    <input class="mc" type="checkbox" name="v23e2" value=1> Gender and/or sex<br>
-                    <input class="mc" type="checkbox" name="v23e3" value=1> Income<br>
-                    <input class="mc" type="checkbox" name="v23e4" value=1> Employment status<br>
-                    <input class="mc" type="checkbox" name="v23e5" value=1> Current occupation<br>
-                    <input class="mc" type="checkbox" name="v23e6" value=1> Highlest level of education<br>
-                    <input class="mc" type="checkbox" name="v23e7" value=1> GIS or other spatial/location based information<br>
-                  </div>
-
-                  <input class="mc" type="checkbox" name="v23f" value=1>Academic performance/exam scores<br>
-
-                  <input class="mc" id="obs" type="checkbox" name="v23g" value=1>Observational data<br>
-                  <div id="followupobs">
-                    <p class="font-weight-bold">Are audiovisual recordings made of the observation?</p>
-                    <input class="mc" type="radio" name="v23g1" value=1> No, an observer will only take notes<br>
-                    <input class="mc" id="obsav" type="radio" name="v23g1" value=2> Yes,
-                    audiovisual data will be recorded<br>
-                    <div id="followupobsav">
-                      <p class="font-weight-bold">Could the subject matter addressed in the audiovisual data be considered
-                        sensitive (i.e. if a person’s answers were made known to others, could it harm the individual)?</p>
-                      <input class="mc" type="radio" name="v23g2" value=1> Yes<br>
-                      <input class="mc" type="radio" name="v23g2" value=2> No<br>
-                    </div>
-                  </div>
-
-                  <input class="mc" id="quest" type="checkbox" name="v23h" value=1>Questionnaire
-                  data<br>
-                  <div id="followupquest">
-                    <p class="font-weight-bold">Could topics addressed in the questionnaire be considered sensitive (i.e. if a
-                      person’s answers were made known to others, could it harm the individual)?</p>
-                    <input class="mc" type="radio" name="v23h1" value=1> Yes<br>
-                    <input class="mc" type="radio" name="v23h1" value=2> No<br>
-                    <p class="font-weight-bold">Does the questionnaire collect special types of data (health-related,
-                      race/ethnicity, religion/philosophies, sexual preferences, criminal history, union memberships,
-                      political opinions) or socio-economic information?</p>
-                    <p class="info">NB: This question can be answered as “no/recoded above” if this information has already
-                      been recorded above</p>
-                    <input class="mc" type="radio" name="v23h2" value=1> Yes<br>
-                    <input class="mc" type="radio" name="v23h2" value=2> No/recorded above<br>
-                    <p class="font-weight-bold">Are there open text fields in the questionnaire?</p>
-                    <input class="mc" type="radio" name="v23h3" value=1> Yes<br>
-                    <input class="mc" type="radio" name="v23h3" value=2> No<br>
-                  </div>
-
-                  <input class="mc" id="qual" type="checkbox" name="v23i" value=1>Qualitative data,
-                  namely
-                  interviews<br>
-                  <div id="followupqual">
-                    <p class="font-weight-bold">Is the interview recorded on an audiovisual medium?</p>
-                    <input class="mc" type="radio" name="v23i1" value=1> No, an assistant writes a transcript during the
-                    interview<br>
-                    <input class="mc" id="qualav" type="radio" name="v23i1" value=2> Yes, the
-                    interview is
-                    recorded on an audiovisual medium<br>
-                    <div id="followupqualav">
-                      <p class="font-weight-bold">Could the subject matter addressed in the audiovisual data be considered
-                        sensitive (i.e. if a person’s answers were made known to others, could it harm the individual)?</p>
-                      <input class="mc" type="radio" name="v23i2" value=1> Yes<br>
-                      <input class="mc" type="radio" name="v23i2" value=2> No<br>
-                    </div>
-                  </div>
-
-                  <p class="font-weight-bold">Would it be possible to infer sensitive information (e.g. sexual preferences,
-                    religion,
-                    health status, political opinions, criminal activity) about an individual by combining information,
-                    either
-                    within the research data or with public information, or through attribute disclosure (e.g. if a subset
-                    of
-                    participants with the same characteristics all have the same sensitive condition, such as HIV, it can
-                    be
-                    inferred that all participants in the dataset with those characteristics have HIV)? </p>
-                  <input class="mc" type="radio" name="v4" value=1>Yes <br>
-                  <input class="mc" type="radio" name="v4" value=2>No <br>
-
-                  <p class="font-weight-bold">If the data in question are leaked to the public, could there be a negative impact on
-                    the
-                    participant(s)?</p>
-                  <input class="mc" type="radio" name="v5" value=1>Yes <br>
-                  <input class="mc" type="radio" name="v5" value=2>No <br>
-
-                  <p class="font-weight-bold">If the data in question are leaked to the public, could there be a negative impact on
-                    the
-                    VU’s reputation?</p>
-                  <input class="mc" type="radio" name="v6" value=1>Yes <br>
-                  <input class="mc" type="radio" name="v6" value=2>No <br>
-
-                  <p class="font-weight-bold">Are the data in question subject to intellectual property law?</p>
-                  <input class="mc" type="radio" name="v7" value=1>Yes <br>
-                  <input class="mc" type="radio" name="v7" value=2>No <br>
-
-                  <p class="font-weight-bold">Do users need to be able to access the data outside the VU-environment?</p>
-                  <input class="mc" type="radio" name="v8" value=1>Yes <br>
-                  <input class="mc" type="radio" name="v8" value=2>No <br>
-
+              <div class="card-body">
+                <p class="font-weight-bold">How would you describe your participants (multiple answers possible)?</p>
+                <input class="mc" type="checkbox" name="v1a" value=1> Healthy adults<br>
+                <input class="mc" type="checkbox" name="v1b" value=1> Healthy children<br>
+                <input class="mc" id="preg" type="checkbox" name="v1c" value=1> Pregnant women <br>
+                <div id="followuppreg">
+                  <p class="font-weight-bold">Is the nature of the research something where pregnant women may be judged on their
+                    behaviours/health-status, e.g. smoking during pregnancy?</p>
+                  <input class="mc" type="radio" name="v1c1" value=1> Yes <br>
+                  <input class="mc" type="radio" name="v1c1" value=2> No <br>
                 </div>
+                <input class="mc" type="checkbox" name="v1d" value=1> Adult patients (i.e. having any medical condition, mental
+                or physical; not necessarily inpatients)<br>
+                <input class="mc" type="checkbox" name="v1e" value=1> Pediatric patients (i.e. having any medical condition,
+                mental or physical; not necessarily inpatients)<br>
+                <input class="mc" type="checkbox" name="v1f" value=1> LGBTQ+ individuals<br>
+                <input class="mc" type="checkbox" name="v1g" value=1> Refugees<br>
+                <input class="mc" type="checkbox" name="v1h" value=1> Sex workers<br>
+                <input class="mc" type="checkbox" name="v1i" value=1> Felons or other individuals with a criminal history<br>
+                <input class="mc" type="checkbox" name="v1j" value=1> Physically-impaired individuals<br>
+                <input class="mc" type="checkbox" name="v1k" value=1> Mentally-impaired individuals<br>
+                <input class="mc" type="checkbox" name="v1l" value=1> Racial, religious, ethic or other visible minority<br>
+
+                <p class="font-weight-bold">Which of the following best describes the data you are collecting (multiple answers
+                  possible)?</p>
+                <input class="mc" type="checkbox" name="v23a" value=1>Directly identifying information, including:<br>
+                <ul class="list">
+                  <li>Name</li>
+                  <li>Address, e-mail address</li>
+                  <li>IP-address, MAC-address</li>
+                  <li>Birthdate</li>
+                  <li>BSN</li>
+                </ul><br>
+                <input class="mc" type="checkbox" name="v23b" value=1>"Special" data, as defined by the GDPR, including:<br>
+                <ul class="list">
+                  <li>Genetic data</li>
+                  <li>Race or ethnicity</li>
+                  <li>Religion, philosophy or other beliefs</li>
+                  <li>Sexual preferences</li>
+                  <li>Criminal activity</li>
+                  <li>Union memberships</li>
+                  <li>Political opinions</li>
+                </ul><br>
+                <p class="info">NB: health-related data and physical measurements are addressed separately</p>
+
+                <input class="mc" id="health" type="checkbox" name="v23c" value=1>Health-related
+                data and physical measurements<br>
+                <div id="followuphealth">
+                  <p class="font-weight-bold">What kind of health-related/physical data will be collected (multiple answers
+                    possible)?</p>
+                  <input class="mc" type="checkbox" name="v23c1" value=1> Height, weight, waist circumference, body fat
+                  and
+                  other
+                  related measures<br>
+                  <input class="mc" type="checkbox" name="v23c2" value=1> Cardiovascular measurements (e.g. blood
+                  pressure,
+                  heart
+                  rate, cardiac output, ECGs)<br>
+                  <input class="mc" type="checkbox" name="v23c3" value=1> VU Ambulatory Monitoring System data (e.g.
+                  circadian
+                  rhythms, sleep-wake cycle, response to stressors)<br>
+                  <input class="mc" type="checkbox" name="v23c4" value=1> Exercise capacity (e.g. VO2 Max)<br>
+                  <input class="mc" type="checkbox" name="v23c5" value=1> Accelerometry<br>
+                  <input class="mc" type="checkbox" name="v23c6" value=1> Pulmonary function testing<br>
+                  <input class="mc" type="checkbox" name="v23c7" value=1> Blood tests (levels of: glucose, cholesterol,
+                  fatty
+                  acids, vitamins, hormones etc.)<br>
+                  <input class="mc" type="checkbox" name="v23c8" value=1> Neurological imaging (e.g. fMRI)<br>
+                  <input class="mc" type="checkbox" name="v23c9" value=1> Other neurological testing (e.g. EEGs, facial
+                  cues,
+                  eye-tracking, reaction times)<br>
+                  <input class="mc" type="checkbox" name="v23c10" value=1> Tongue positioning/non-nutritive sucking<br>
+                  <input class="mc" type="checkbox" name="v23c11" value=1> Genetic risk factors for disease<br>
+                  <input class="mc" type="checkbox" name="v23c12" value=1> Mental health, stress, well-being,
+                  self-efficacy,
+                  personality traits<br>
+                  <input class="mc" type="checkbox" name="v23c13" value=1> History of mental or physical abuse<br>
+                  <input class="mc" type="checkbox" name="v23c14" value=1> Known medical conditions/diagnoses<br>
+                  <input class="mc" type="checkbox" name="v23c15" value=1> Medications (including herbals and supplements)<br>
+                  <input class="mc" type="checkbox" name="v23c16" value=1> Family history<br>
+                  <input class="mc" type="checkbox" name="v23c17" value=1> Smoking status<br>
+                  <input class="mc" type="checkbox" name="v23c18" value=1> Alcohol consumption<br>
+                  <input class="mc" type="checkbox" name="v23c19" value=1> Illicit drug use<br>
+                </div>
+
+                <input class="mc" id="exp" type="checkbox" name="v23d" value=1>Experimental data<br>
+                <div id="followupexp">
+                  <p class="font-weight-bold">What kind of experimental data will be collected (multiple answers possible)?</p>
+                  <input class="mc" type="checkbox" name="v23d1" value=1> If not recorded under health-related data,
+                  neurological
+                  imaging (e.g. fMRI)<br>
+                  <input class="mc" type="checkbox" name="v23d2" value=1> If not recorded under health-related data, other
+                  neurological testing (e.g. EEGs, facial cues, eye-tracking, reaction times)<br>
+                  <input class="mc" type="checkbox" name="v23d3" value=1> Speech analysis<br>
+                  <input class="mc" type="checkbox" name="v23d4" value=1> Testing of executive function<br>
+                  <input class="mc" type="checkbox" name="v23d5" value=1> Financial games<br>
+                </div>
+
+                <input class="mc" id="ses" type="checkbox" name="v23e" value=1>Social-economic
+                information<br>
+                <div id="followupses">
+                  <p class="font-weight-bold">What kind of experimental data will be collected (multiple answers possible)?</p>
+                  <input class="mc" type="checkbox" name="v23e1" value=1> Age<br>
+                  <input class="mc" type="checkbox" name="v23e2" value=1> Gender and/or sex<br>
+                  <input class="mc" type="checkbox" name="v23e3" value=1> Income<br>
+                  <input class="mc" type="checkbox" name="v23e4" value=1> Employment status<br>
+                  <input class="mc" type="checkbox" name="v23e5" value=1> Current occupation<br>
+                  <input class="mc" type="checkbox" name="v23e6" value=1> Highlest level of education<br>
+                  <input class="mc" type="checkbox" name="v23e7" value=1> GIS or other spatial/location based information<br>
+                </div>
+
+                <input class="mc" type="checkbox" name="v23f" value=1>Academic performance/exam scores<br>
+
+                <input class="mc" id="obs" type="checkbox" name="v23g" value=1>Observational data<br>
+                <div id="followupobs">
+                  <p class="font-weight-bold">Are audiovisual recordings made of the observation?</p>
+                  <input class="mc" type="radio" name="v23g1" value=1> No, an observer will only take notes<br>
+                  <input class="mc" id="obsav" type="radio" name="v23g1" value=2> Yes,
+                  audiovisual data will be recorded<br>
+                  <div id="followupobsav">
+                    <p class="font-weight-bold">Could the subject matter addressed in the audiovisual data be considered
+                      sensitive (i.e. if a person’s answers were made known to others, could it harm the individual)?</p>
+                    <input class="mc" type="radio" name="v23g2" value=1> Yes<br>
+                    <input class="mc" type="radio" name="v23g2" value=2> No<br>
+                  </div>
+                </div>
+
+                <input class="mc" id="quest" type="checkbox" name="v23h" value=1>Questionnaire
+                data<br>
+                <div id="followupquest">
+                  <p class="font-weight-bold">Could topics addressed in the questionnaire be considered sensitive (i.e. if a
+                    person’s answers were made known to others, could it harm the individual)?</p>
+                  <input class="mc" type="radio" name="v23h1" value=1> Yes<br>
+                  <input class="mc" type="radio" name="v23h1" value=2> No<br>
+                  <p class="font-weight-bold">Does the questionnaire collect special types of data (health-related,
+                    race/ethnicity, religion/philosophies, sexual preferences, criminal history, union memberships,
+                    political opinions) or socio-economic information?</p>
+                  <p class="info">NB: This question can be answered as “no/recoded above” if this information has already
+                    been recorded above</p>
+                  <input class="mc" type="radio" name="v23h2" value=1> Yes<br>
+                  <input class="mc" type="radio" name="v23h2" value=2> No/recorded above<br>
+                  <p class="font-weight-bold">Are there open text fields in the questionnaire?</p>
+                  <input class="mc" type="radio" name="v23h3" value=1> Yes<br>
+                  <input class="mc" type="radio" name="v23h3" value=2> No<br>
+                </div>
+
+                <input class="mc" id="qual" type="checkbox" name="v23i" value=1>Qualitative data,
+                namely
+                interviews<br>
+                <div id="followupqual">
+                  <p class="font-weight-bold">Is the interview recorded on an audiovisual medium?</p>
+                  <input class="mc" type="radio" name="v23i1" value=1> No, an assistant writes a transcript during the
+                  interview<br>
+                  <input class="mc" id="qualav" type="radio" name="v23i1" value=2> Yes, the
+                  interview is
+                  recorded on an audiovisual medium<br>
+                  <div id="followupqualav">
+                    <p class="font-weight-bold">Could the subject matter addressed in the audiovisual data be considered
+                      sensitive (i.e. if a person’s answers were made known to others, could it harm the individual)?</p>
+                    <input class="mc" type="radio" name="v23i2" value=1> Yes<br>
+                    <input class="mc" type="radio" name="v23i2" value=2> No<br>
+                  </div>
+                </div>
+
+                <p class="font-weight-bold">Would it be possible to infer sensitive information (e.g. sexual preferences,
+                  religion,
+                  health status, political opinions, criminal activity) about an individual by combining information,
+                  either
+                  within the research data or with public information, or through attribute disclosure (e.g. if a subset
+                  of
+                  participants with the same characteristics all have the same sensitive condition, such as HIV, it can
+                  be
+                  inferred that all participants in the dataset with those characteristics have HIV)? </p>
+                <input class="mc" type="radio" name="v4" value=1>Yes <br>
+                <input class="mc" type="radio" name="v4" value=2>No <br>
+
+                <p class="font-weight-bold">If the data in question are leaked to the public, could there be a negative impact on
+                  the
+                  participant(s)?</p>
+                <input class="mc" type="radio" name="v5" value=1>Yes <br>
+                <input class="mc" type="radio" name="v5" value=2>No <br>
+
+                <p class="font-weight-bold">If the data in question are leaked to the public, could there be a negative impact on
+                  the
+                  VU’s reputation?</p>
+                <input class="mc" type="radio" name="v6" value=1>Yes <br>
+                <input class="mc" type="radio" name="v6" value=2>No <br>
+
+                <p class="font-weight-bold">Are the data in question subject to intellectual property law?</p>
+                <input class="mc" type="radio" name="v7" value=1>Yes <br>
+                <input class="mc" type="radio" name="v7" value=2>No <br>
+
+                <p class="font-weight-bold">Do users need to be able to access the data outside the VU-environment?</p>
+                <input class="mc" type="radio" name="v8" value=1>Yes <br>
+                <input class="mc" type="radio" name="v8" value=2>No <br>
+
               </div>
             </div>
-          </div>
-          <button type="button" class="btn btn-lg btn-success" id="submitbtn" onclick="check();">Submit</button>
-          <button class="word-export" href="javascript:void(0)"> Export as .doc </button>
+            <div class="col-sm-3" id="after_submit">
+              <p class="font-weight-bold" id="availability"></p>
+              <p class="font-weight-bold" id="integrity"></p>
+              <p class="font-weight-bold" id="confidentiality"></p>
+            </div>
+          </form>
         </div>
-        </form>
-      </div>
-
-      <div class="col-sm-3" id="after_submit">
-        <p class="font-weight-bold" id="availability"></p>
-        <p class="font-weight-bold" id="integrity"></p>
-        <p class="font-weight-bold" id="confidentiality"></p>
+        <button type="button" class="btn btn-lg btn-success" id="submitbtn" onclick="check();">Submit</button><br>
+        <button type="button" class="btn btn-lg btn-success" id="printbtn" onclick="printJS('printJS-form', 'html')">Print Form</button>
       </div>
     </div>
-</div>
+  </div>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="jquery-3.3.1.slim.min.js"></script>
-    <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="FileSaver.js"></script>
-    <script src="jquery.wordexport.js"></script>
-    <!-- Local JavaScript -->
-    <script src="main.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="jquery-3.3.1.slim.min.js"></script>
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="print.min.js"></script>
+  <!-- Local JavaScript -->
+  <script src="main.js"></script>
 </body>
 
 

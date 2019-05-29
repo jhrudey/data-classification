@@ -1,5 +1,3 @@
-
-
 //submission and answers for classification
 
 function check() {
@@ -155,7 +153,7 @@ function check() {
 //export input as word document
 
 jQuery(document).ready(function($) {
-  $("button.word-export").click(function(event) {
+  $("a.word-export").click(function(event) {
     $("#page-content").wordExport();
   });
 });
