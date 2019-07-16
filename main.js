@@ -36,7 +36,7 @@ function check() {
     var v1b = document.dataclass.v1b.value;
     var v1c = document.dataclass.v1c.value;
     var v1c1 = document.dataclass.v1c1.value;
-    var v1d = document.dataclass.v1d.value;
+    var v1d = document.getElementById('v1d').checked;
     var v1e = document.dataclass.v1e.value;
     var v1f = document.dataclass.v1f.value;
     var v1g = document.dataclass.v1g.value;
@@ -103,20 +103,24 @@ function check() {
     var v1234total = 0;
     var confidrisk = "";
 
-    if (v1c1 == 1 || v1d == 1 || v1e == 1 || v1f == 1 || v1g == 1 || v1h == 1 || v1i == 1 || v1j == 1 ||
-        v1k == 1 || v1l == 1) {
+//work from here to see if can figure out the issue. also need to change some ID names of checkboxes
+
+    if (v1d == true ) {
         v1total = 2;
     }  else if (v1b == 1) {
         v1total = 1;
-    } else if (v1a == 1) {
+    } else {
         v1total = 0;
     }
 
-    if (v23a == 1 || v23b == 1 || v23c1 == 1 || v23c11 == 1 || v23c12 == 1 || v23c13 == 1 || v23c14 == 1 ||
-        v23c15 == 1 || v23c16 == 1 || v23c17 == 1 || v23c18 ==1 || v23c19 == 1 || v23d3 == 1 || v23d4 == 1 ||
-        v23e3 == 1 || v23e4 == 1 || v23f == 1 | v23g2 == 1 || v23h1 == 1 || v23h2 == 1 || v23i2 == 1) {
-            v23total = 2;
-    } else if (v23c2 == 1 || v23c3 == 1 || v23c4 == 1 || v23c5 == 1 || v23c5 == 1 || v23c6 == 1 || v23c7 == 1 ||
+
+
+if (v23a == 1 || v23b == 1 || v23c1 == 1 || v23c11 == 1 || v23c12 == 1 || v23c13 == 1 || v23c14 == 1 ||
+    v23c15 == 1 || v23c16 == 1 || v23c17 == 1 || v23c18 ==1 || v23c19 == 1 || v23d3 == 1 || v23d4 == 1 ||
+    v23e3 == 1 || v23e4 == 1 || v23f == 1 | v23g2 == 1 || v23h1 == 1 || v23h2 == 1 || v23i2 == 1) {
+      v23total = 2;
+    }
+        else if (v23c2 == 1 || v23c3 == 1 || v23c4 == 1 || v23c5 == 1 || v23c5 == 1 || v23c6 == 1 || v23c7 == 1 ||
         v23c8 == 1 || v23c9 == 1 || v23c10 == 1 || v23d1 == 1 || v23d2 == 1 || v23e2 == 1 || v23e5 == 1 ||
         v23g2 == 2 || v23h3 == 1 || v23i1 == 1 || v23i2 == 2) {
         v23total = 1;
@@ -142,6 +146,7 @@ function check() {
         confidrisk = "LOW"
     }
 
+window.alert(v1d)
 
     document.getElementById("after_submit").style.visibility = "visible";
 
