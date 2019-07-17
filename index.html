@@ -95,30 +95,30 @@
               </div>
               <div class="card-body">
                 <p class="font-weight-bold">How would you describe your participants (multiple answers possible)?</p>
-                <input class="mc" type="checkbox" name="v1a" value=1> Healthy adults<br>
-                <input class="mc" type="checkbox" name="v1b" value=1> Healthy children<br>
-                <input class="mc" id="preg" type="checkbox" name="v1c" value=1> Pregnant women <br>
+                <input class="mc" type="checkbox" id="v1a" value=1> Healthy adults<br>
+                <input class="mc" type="checkbox" id="v1b" value=1> Healthy children<br>
+                <input class="mc" type="checkbox" id="preg" value=1> Pregnant women <br>
                 <div id="followuppreg">
                   <p class="font-weight-bold">Is the nature of the research something where pregnant women may be judged on their
                     behaviours/health-status, e.g. smoking during pregnancy?</p>
-                  <input class="mc" type="radio" name="v1c1" value=1> Yes <br>
-                  <input class="mc" type="radio" name="v1c1" value=2> No <br>
+                  <input class="mc" type="radio" name="v1c" value=1> Yes <br>
+                  <input class="mc" type="radio" name="v1c" value=2> No <br>
                 </div>
                 <input class="mc" type="checkbox" id="v1d" value = 1> Adult patients (i.e. having any medical condition, mental
                 or physical; not necessarily inpatients)<br>
-                <input class="mc" type="checkbox" name="v1e" value=1> Pediatric patients (i.e. having any medical condition,
+                <input class="mc" type="checkbox" id="v1e" value=1> Pediatric patients (i.e. having any medical condition,
                 mental or physical; not necessarily inpatients)<br>
-                <input class="mc" type="checkbox" name="v1f" value=1> LGBTQ+ individuals<br>
-                <input class="mc" type="checkbox" name="v1g" value=1> Refugees<br>
-                <input class="mc" type="checkbox" name="v1h" value=1> Sex workers<br>
-                <input class="mc" type="checkbox" name="v1i" value=1> Felons or other individuals with a criminal history<br>
-                <input class="mc" type="checkbox" name="v1j" value=1> Physically-impaired individuals<br>
-                <input class="mc" type="checkbox" name="v1k" value=1> Mentally-impaired individuals<br>
-                <input class="mc" type="checkbox" name="v1l" value=1> Racial, religious, ethic or other visible minority<br>
+                <input class="mc" type="checkbox" id="v1f" value=1> LGBTQ+ individuals<br>
+                <input class="mc" type="checkbox" id="v1g" value=1> Refugees<br>
+                <input class="mc" type="checkbox" id="v1h" value=1> Sex workers<br>
+                <input class="mc" type="checkbox" id="v1i" value=1> Felons or other individuals with a criminal history<br>
+                <input class="mc" type="checkbox" id="v1j" value=1> Physically-impaired individuals<br>
+                <input class="mc" type="checkbox" id="v1k" value=1> Mentally-impaired individuals<br>
+                <input class="mc" type="checkbox" id="v1l" value=1> Racial, religious, ethic or other visible minority<br>
 
                 <p class="font-weight-bold">Which of the following best describes the data you are collecting (multiple answers
                   possible)?</p>
-                <input class="mc" type="checkbox" name="v23a" value=1>Directly identifying information, including:<br>
+                <input class="mc" type="checkbox" id="v23a" value=1>Directly identifying information, including:<br>
                 <ul class="list">
                   <li>Name</li>
                   <li>Address, e-mail address</li>
@@ -126,7 +126,7 @@
                   <li>Birthdate</li>
                   <li>BSN</li>
                 </ul><br>
-                <input class="mc" type="checkbox" name="v23b" value=1>"Special" data, as defined by the GDPR, including:<br>
+                <input class="mc" type="checkbox" id="v23b" value=1>"Special" data, as defined by the GDPR, including:<br>
                 <ul class="list">
                   <li>Genetic data</li>
                   <li>Race or ethnicity</li>
@@ -138,75 +138,75 @@
                 </ul><br>
                 <p class="info">NB: health-related data and physical measurements are addressed separately</p>
 
-                <input class="mc" id="health" type="checkbox" name="v23c" value=1>Health-related
+                <input class="mc" type="checkbox" id="health" value=1>Health-related
                 data and physical measurements<br>
                 <div id="followuphealth">
                   <p class="font-weight-bold">What kind of health-related/physical data will be collected (multiple answers
                     possible)?</p>
-                  <input class="mc" type="checkbox" name="v23c1" value=1> Height, weight, waist circumference, body fat
+                  <input class="mc" type="checkbox" id="v23c1" value=1> Height, weight, waist circumference, body fat
                   and
                   other
                   related measures<br>
-                  <input class="mc" type="checkbox" name="v23c2" value=1> Cardiovascular measurements (e.g. blood
+                  <input class="mc" type="checkbox" id="v23c2" value=1> Cardiovascular measurements (e.g. blood
                   pressure,
                   heart
                   rate, cardiac output, ECGs)<br>
-                  <input class="mc" type="checkbox" name="v23c3" value=1> VU Ambulatory Monitoring System data (e.g.
+                  <input class="mc" type="checkbox" id="v23c3" value=1> VU Ambulatory Monitoring System data (e.g.
                   circadian
                   rhythms, sleep-wake cycle, response to stressors)<br>
-                  <input class="mc" type="checkbox" name="v23c4" value=1> Exercise capacity (e.g. VO2 Max)<br>
-                  <input class="mc" type="checkbox" name="v23c5" value=1> Accelerometry<br>
-                  <input class="mc" type="checkbox" name="v23c6" value=1> Pulmonary function testing<br>
-                  <input class="mc" type="checkbox" name="v23c7" value=1> Blood tests (levels of: glucose, cholesterol,
+                  <input class="mc" type="checkbox" id="v23c4" value=1> Exercise capacity (e.g. VO2 Max)<br>
+                  <input class="mc" type="checkbox" id="v23c5" value=1> Accelerometry<br>
+                  <input class="mc" type="checkbox" id="v23c6" value=1> Pulmonary function testing<br>
+                  <input class="mc" type="checkbox" id="v23c7" value=1> Blood tests (levels of: glucose, cholesterol,
                   fatty
                   acids, vitamins, hormones etc.)<br>
-                  <input class="mc" type="checkbox" name="v23c8" value=1> Neurological imaging (e.g. fMRI)<br>
-                  <input class="mc" type="checkbox" name="v23c9" value=1> Other neurological testing (e.g. EEGs, facial
+                  <input class="mc" type="checkbox" id="v23c8" value=1> Neurological imaging (e.g. fMRI)<br>
+                  <input class="mc" type="checkbox" id="v23c9" value=1> Other neurological testing (e.g. EEGs, facial
                   cues,
                   eye-tracking, reaction times)<br>
-                  <input class="mc" type="checkbox" name="v23c10" value=1> Tongue positioning/non-nutritive sucking<br>
-                  <input class="mc" type="checkbox" name="v23c11" value=1> Genetic risk factors for disease<br>
-                  <input class="mc" type="checkbox" name="v23c12" value=1> Mental health, stress, well-being,
+                  <input class="mc" type="checkbox" id="v23c10" value=1> Tongue positioning/non-nutritive sucking<br>
+                  <input class="mc" type="checkbox" id="v23c11" value=1> Genetic risk factors for disease<br>
+                  <input class="mc" type="checkbox" id="v23c12" value=1> Mental health, stress, well-being,
                   self-efficacy,
                   personality traits<br>
-                  <input class="mc" type="checkbox" name="v23c13" value=1> History of mental or physical abuse<br>
-                  <input class="mc" type="checkbox" name="v23c14" value=1> Known medical conditions/diagnoses<br>
-                  <input class="mc" type="checkbox" name="v23c15" value=1> Medications (including herbals and supplements)<br>
-                  <input class="mc" type="checkbox" name="v23c16" value=1> Family history<br>
-                  <input class="mc" type="checkbox" name="v23c17" value=1> Smoking status<br>
-                  <input class="mc" type="checkbox" name="v23c18" value=1> Alcohol consumption<br>
-                  <input class="mc" type="checkbox" name="v23c19" value=1> Illicit drug use<br>
+                  <input class="mc" type="checkbox" id="v23c13" value=1> History of mental or physical abuse<br>
+                  <input class="mc" type="checkbox" id="v23c14" value=1> Known medical conditions/diagnoses<br>
+                  <input class="mc" type="checkbox" id="v23c15" value=1> Medications (including herbals and supplements)<br>
+                  <input class="mc" type="checkbox" id="v23c16" value=1> Family history<br>
+                  <input class="mc" type="checkbox" id="v23c17" value=1> Smoking status<br>
+                  <input class="mc" type="checkbox" id="v23c18" value=1> Alcohol consumption<br>
+                  <input class="mc" type="checkbox" id="v23c19" value=1> Illicit drug use<br>
                 </div>
 
-                <input class="mc" id="exp" type="checkbox" name="v23d" value=1>Experimental data<br>
+                <input class="mc" type="checkbox" id="exp" value=1>Experimental data<br>
                 <div id="followupexp">
                   <p class="font-weight-bold">What kind of experimental data will be collected (multiple answers possible)?</p>
-                  <input class="mc" type="checkbox" name="v23d1" value=1> If not recorded under health-related data,
+                  <input class="mc" type="checkbox" id="v23d1" value=1> If not recorded under health-related data,
                   neurological
                   imaging (e.g. fMRI)<br>
-                  <input class="mc" type="checkbox" name="v23d2" value=1> If not recorded under health-related data, other
+                  <input class="mc" type="checkbox" id="v23d2" value=1> If not recorded under health-related data, other
                   neurological testing (e.g. EEGs, facial cues, eye-tracking, reaction times)<br>
-                  <input class="mc" type="checkbox" name="v23d3" value=1> Speech analysis<br>
-                  <input class="mc" type="checkbox" name="v23d4" value=1> Testing of executive function<br>
-                  <input class="mc" type="checkbox" name="v23d5" value=1> Financial games<br>
+                  <input class="mc" type="checkbox" id="v23d3" value=1> Speech analysis<br>
+                  <input class="mc" type="checkbox" id="v23d4" value=1> Testing of executive function<br>
+                  <input class="mc" type="checkbox" id="v23d5" value=1> Financial games<br>
                 </div>
 
-                <input class="mc" id="ses" type="checkbox" name="v23e" value=1>Social-economic
+                <input class="mc" type="checkbox" id="ses" value=1>Social-economic
                 information<br>
                 <div id="followupses">
                   <p class="font-weight-bold">What kind of experimental data will be collected (multiple answers possible)?</p>
-                  <input class="mc" type="checkbox" name="v23e1" value=1> Age<br>
-                  <input class="mc" type="checkbox" name="v23e2" value=1> Gender and/or sex<br>
-                  <input class="mc" type="checkbox" name="v23e3" value=1> Income<br>
-                  <input class="mc" type="checkbox" name="v23e4" value=1> Employment status<br>
-                  <input class="mc" type="checkbox" name="v23e5" value=1> Current occupation<br>
-                  <input class="mc" type="checkbox" name="v23e6" value=1> Highlest level of education<br>
-                  <input class="mc" type="checkbox" name="v23e7" value=1> GIS or other spatial/location based information<br>
+                  <input class="mc" type="checkbox" id="v23e1" value=1> Age<br>
+                  <input class="mc" type="checkbox" id="v23e2" value=1> Gender and/or sex<br>
+                  <input class="mc" type="checkbox" id="v23e3" value=1> Income<br>
+                  <input class="mc" type="checkbox" id="v23e4" value=1> Employment status<br>
+                  <input class="mc" type="checkbox" id="v23e5" value=1> Current occupation<br>
+                  <input class="mc" type="checkbox" id="v23e6" value=1> Highlest level of education<br>
+                  <input class="mc" type="checkbox" id="v23e7" value=1> GIS or other spatial/location based information<br>
                 </div>
 
-                <input class="mc" type="checkbox" name="v23f" value=1>Academic performance/exam scores<br>
+                <input class="mc" type="checkbox" id="v23f" value=1>Academic performance/exam scores<br>
 
-                <input class="mc" id="obs" type="checkbox" name="v23g" value=1>Observational data<br>
+                <input class="mc" type="checkbox" id="obs" value=1>Observational data<br>
                 <div id="followupobs">
                   <p class="font-weight-bold">Are audiovisual recordings made of the observation?</p>
                   <input class="mc" type="radio" name="v23g1" value=1> No, an observer will only take notes<br>
@@ -220,7 +220,7 @@
                   </div>
                 </div>
 
-                <input class="mc" id="quest" type="checkbox" name="v23h" value=1>Questionnaire
+                <input class="mc" type="checkbox" id="quest" value=1>Questionnaire
                 data<br>
                 <div id="followupquest">
                   <p class="font-weight-bold">Could topics addressed in the questionnaire be considered sensitive (i.e. if a
@@ -239,7 +239,7 @@
                   <input class="mc" type="radio" name="v23h3" value=2> No<br>
                 </div>
 
-                <input class="mc" id="qual" type="checkbox" name="v23i" value=1>Qualitative data,
+                <input class="mc" type="checkbox" id="qual" value=1>Qualitative data,
                 namely
                 interviews<br>
                 <div id="followupqual">
