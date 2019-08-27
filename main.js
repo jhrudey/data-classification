@@ -1,3 +1,18 @@
+//display human-related data questions
+function humandata() {
+  var privacy  = document.dataclass.privacy.value;
+  if (privacy == 1) {
+      document.getElementById("followuphumans1").style.display = "block";
+      document.getElementById("followuphumans2").style.display = "block";
+      document.getElementById("followuphumans3").style.display = "block";
+    }
+  else {
+    document.getElementById("followuphumans1").style.display = "block";
+    document.getElementById("followuphumans2").style.display = "block";
+    document.getElementById("followuphumans3").style.display = "block";
+    }
+  }
+
 //submission and answers for classification
 
 function check() {
@@ -6,12 +21,13 @@ function check() {
   var b2 = document.dataclass.b2.value;
   var b3 = document.dataclass.b3.value;
   var b4 = document.dataclass.b4.value;
+  var b5 = document.dataclass.b4.value;
   var availrisk = "";
 
 
-  if (b1 == 1 || b2 == 1 || b3 == 1 || b4 == 1) {
+  if (b1 == 1 || b2 == 1 || b3 == 1 || b4 == 1 || b5 == 3 || b5 ==4) {
     availrisk = "HIGH";
-  } else if (b1 == 2 || b2 == 2 || b3 == 2) {
+  } else if (b1 == 2 || b2 == 2 || b4 == 2 || b5 == 2) {
     availrisk = "MEDIUM";
   } else {
     availrisk = "LOW";
@@ -135,8 +151,6 @@ function check() {
   } else {
     confidrisk = "LOW"
   }
-
-  window.alert(v1234total)
 
   document.getElementById("after_submit").style.visibility = "visible";
 
