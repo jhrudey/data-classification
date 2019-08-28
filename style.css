@@ -24,30 +24,11 @@ p.font-weight-bold {
   padding-bottom: 5px;
 }
 
-#submitbtn {
-  background: green;
-  transition-duration: .5s;
-  margin-top: 15px;
+a:link {
+  color: blue;
+  font-style: italic;
 }
 
-#submitbtn:hover {
-  background: white;
-  border: 1px solid green;
-  color: black;
-  cursor: pointer;
-}
-#printbtn {
-  background: green;
-  transition-duration: .5s;
-  margin-top: 15px;
-}
-
-#printbtn:hover {
-  background: white;
-  border: 1px solid green;
-  color: black;
-  cursor: pointer;
-}
 
 .mc {
   display: inline;
@@ -74,6 +55,18 @@ p.font-weight-bold {
 
 #followuphumans3 {
   display: none;
+}
+
+#followupinteg {
+  margin-bottom: 20px;
+  margin-left: 80px;
+  display: none;
+}
+
+#integ:checked ~ #followupinteg {
+  margin-bottom: 20px;
+  margin-left: 80px;
+  display: block;
 }
 
 #followuppreg {
@@ -185,11 +178,197 @@ p.font-weight-bold {
   display: block;
 }
 
+#a1risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#a2risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#a3risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#a4risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#a5risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#integ:checked ~ #i1risk_submit {
+  display: none;
+}
+
+#i1risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#i1arisk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#i1brisk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#i2risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#i2risk_extratip {
+  display: none;
+}
+
+#i3risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#i4risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#c1risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#c2risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#v1risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#v23risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#v4risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
+#v5risk_submit {
+  background: #b3b3b3;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  width: 70%;
+  align-self: flex-end;
+  display: none;
+}
+
 #after_submit {
   background: #ffd700;
   padding: 10px 20px 10px 20px;
   border-radius: 20px;
   width: 70%;
   align-self: flex-end;
-  visibility: hidden;
+  display: none;
+}
+
+#submitbtn {
+  background: green;
+  transition-duration: .5s;
+  margin-top: 15px;
+}
+
+#submitbtn:hover {
+  background: white;
+  border: 1px solid green;
+  color: black;
+  cursor: pointer;
+}
+#printbtn {
+  background: green;
+  transition-duration: .5s;
+  margin-top: 15px;
+}
+
+#printbtn:hover {
+  background: white;
+  border: 1px solid green;
+  color: black;
+  cursor: pointer;
 }

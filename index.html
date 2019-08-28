@@ -29,11 +29,13 @@
                 <p class="font-italic">The security risks for your data can vary depending on the form and nature of your data (e.g. raw data, processed
                   data, video data, physical measurements). Therefore, it is recommended to carry out this data classification for every data asset
                   described in your data management plan</p>
-                <p class="font-weight-bold">Data asset</p>
-                <textarea class="form-control" name="dataassets" maxlength="350" rows=3 style="min-width: 100%" placeholder="Required field"
-                aria-describedby="dataassethelp"></textarea>
+                <p class="font-weight-bold">Data asset<br>
+                  <a href="https://libguides.vu.nl/researchdata/data-assets-description" target="_blank">(How to Define Data Assets)</a>
+                </p>
+
+                <textarea class="form-control" name="dataassets" maxlength="350" rows=3 style="min-width: 100%" placeholder="Required field" aria-describedby="dataassethelp"></textarea>
                 <small id="dataassethelp" class="form-text text-muted">
-                Max 350 characters
+                  Max 350 characters
                 </small>
                 <p class="font-weight-bold">Do you collect data from human subjects?</p>
                 <input class="mc" type="radio" name="privacy" value=1 onchange="humandata();">Yes<br>
@@ -50,11 +52,13 @@
                 <input class="mc" type="radio" name="a1" value=2> Frequently, but not 24/7 (e.g. 9-5, Mon-Fri or always
                 available unless system maintenance is required)<br>
                 <input class="mc" type="radio" name="a1" value=3> Anything less frequent than typical work hours<br>
+                <div class="col-sm-2" id="a1risk_submit">
+                  <p class="font-weight-bold" id="a1risk_text"></p>
+                </div>
                 <p class="font-weight-bold">Additional information:</p>
-                <textarea class="form-control" name="a1_text" maxlength="1050" rows=9 style="min-width: 100%"
-                placeholder="Please provide additional detail about how readily you need to access the data" aria-describedby="a1_help"></textarea>
+                <textarea class="form-control" name="a1_text" maxlength="1050" rows=9 style="min-width: 100%" placeholder="Please provide additional detail about how readily you need to access the data" aria-describedby="a1_help"></textarea>
                 <small id="a1_help" class="form-text text-muted">
-                Max 1050 characters
+                  Max 1050 characters
                 </small>
 
                 <p class="font-weight-bold">How long would data need to be unavailable for your research project to suffer serious harm
@@ -74,22 +78,29 @@
                     <input class="mc" type="radio" name="a2" value=2> Up to one day<br>
                     <input class="mc" type="radio" name="a2" value=3> Up to one week<br>
                     <input class="mc" type="radio" name="a2" value=4> Up to one month<br>
+                    <div class="col-sm-2" id="a2risk_submit">
+                      <p class="font-weight-bold" id="a2risk_text"></p>
+                    </div>
+                    <p class="font-weight-bold">Additional information:</p>
                     <textarea class="form-control" name="a2_text" maxlength="1050" rows=9 style="min-width: 100%"
                     placeholder="Please provide additional detail about the serious harms the could result from unavailable data"
-                    aria-describedby="a2_help"></textarea>
+                      aria-describedby="a2_help"></textarea>
                     <small id="a2_help" class="form-text text-muted">
-                    Max 1050 characters
+                      Max 1050 characters
                     </small>
 
                     <p class="font-weight-bold">Are there specific situations where access to the data absolutely <span style="font-style:italic">MUST NOT</span> be lost?
                       (e.g. during long computations or during scheduled batch processing)</p>
                     <input class="mc" type="radio" name="a3" value=1> Yes<br>
                     <input class="mc" type="radio" name="a3" value=2> No<br>
-                    <textarea class="form-control" name="a3_text" maxlength="1050" rows=9 style="min-width: 100%"
-                    placeholder="Please provide additional detail about the situations where access to the data MUST NOT be lost"
-                    aria-describedby="a3_help"></textarea>
+                    <div class="col-sm-2" id="a3risk_submit">
+                      <p class="font-weight-bold" id="a3risk_text"></p>
+                    </div>
+                    <p class="font-weight-bold">Additional information:</p>
+                    <textarea class="form-control" name="a3_text" maxlength="1050" rows=9 style="min-width: 100%" placeholder="Please provide additional detail about the situations where access to the data MUST NOT be lost"
+                      aria-describedby="a3_help"></textarea>
                     <small id="a3_help" class="form-text text-muted">
-                    Max 1050 characters
+                      Max 1050 characters
                     </small>
 
                     <p class="font-weight-bold">How severely would the research project be harmed if the data are lost? Consider the worst possible scenario, i.e.
@@ -99,12 +110,14 @@
                     <input class="mc" type="radio" name="a4" value=2>Loss of the data is undesirable, but the loss would only mildly
                     impact the research goals, budget or reputations of the researcher and/or the VU<br>
                     <input class="mc" type="radio" name="a4" value=3>Loss of data is not an issue; data can be easily reproduced as needed<br>
+                    <div class="col-sm-2" id="a4risk_submit">
+                      <p class="font-weight-bold" id="a4risk_text"></p>
+                    </div>
                     <p class="font-weight-bold">Additional information:</p>
-                    <textarea class="form-control" name="a4_text" maxlength="1050" rows=9 style="min-width: 100%"
-                    placeholder="Please provide additional detail about how your research project would be affected if the data were lost"
-                    aria-describedby="a4_help"></textarea>
+                    <textarea class="form-control" name="a4_text" maxlength="1050" rows=9 style="min-width: 100%" placeholder="Please provide additional detail about how your research project would be affected if the data were lost"
+                      aria-describedby="a4_help"></textarea>
                     <small id="a4_help" class="form-text text-muted">
-                    Max 1050 characters
+                      Max 1050 characters
                     </small>
 
                     <p class="font-weight-bold">How long will the data need to be stored and maintained?</p>
@@ -114,77 +127,169 @@
                       <input class="mc" type="radio" name="a5" value=3>25 years after completion of the trial<br>
                     </div>
                     <input class="mc" type="radio" name="a5" value=4>Indefinitely<br>
+                    <div class="col-sm-2" id="a5risk_submit">
+                      <p class="font-weight-bold" id="a5risk_text"></p>
+                    </div>
                     <p class="font-weight-bold">Additional information:</p>
-                    <textarea class="form-control" name="a5_text" maxlength="1050" rows=9 style="min-width: 100%"
-                    placeholder="Please provide additional detail about the duration for which your data need to be stored"
-                    aria-describedby="a5_help"></textarea>
+                    <textarea class="form-control" name="a5_text" maxlength="1050" rows=9 style="min-width: 100%" placeholder="Please provide additional detail about the duration for which your data need to be stored"
+                      aria-describedby="a5_help"></textarea>
                     <small id="a5_help" class="form-text text-muted">
-                    Max 1050 characters
+                      Max 1050 characters
                     </small>
               </div>
             </div>
             <div class="card bg-transparent border-0">
               <div class="card-header" id="headingTwo">
-                <h2 class="font-weight-bold">Integrity Risk</h2>
+                <h2 class="font-weight-bold">Integrity Risk Assessment</h2>
                 </h2>
               </div>
               <div class="card-body">
-                <p class="font-weight-bold">If errors are introduced to the data, or unauthorized changes are made to the data, is
-                  there a risk of incorrect research conclusions? </p>
-                <input class="mc" type="radio" name="i1" value=1> Yes and the risk is high<br>
-                <input class="mc" type="radio" name="i1" value=2> Yes, but the risk of this is low<br>
-                <input class="mc" type="radio" name="i1" value=3> There is no risk of this happening<br>
+                <p class="font-weight-bold">Do multiple users need to be able to access, utlize and/or edit the data simultaneously,
+                thereby increasing the risk of data corruption and/or unauthorized changes?</p>
+                <input class="mc" type="radio" name="i1" value=1> No<br>
+                <input class="mc" type="radio" name="i1" value=2 id="integ"> Yes<br>
+                <div class="col-sm-2" id="i1risk_submit">
+                  <p class="font-weight-bold" id="i1risk_text"></p>
+                </div>
+                <div id="followupinteg">
+                  <p class="font-weight-bold">In what way do the multiple users need to be able to access the data?</p>
+                  <input class="mc" type="radio" name="i1a" value=1>All users can access the data concurrently, but the data doesn't need to be edited simultaneously<br>
+                  <input class="mc" type="radio" name="i1a" value=2>Data must be accessible and editable for multiple users simultaneously<br>
+                  <div class="col-sm-2" id="i1arisk_submit">
+                    <p class="font-weight-bold" id="i1arisk_text"></p>
+                  </div>
+                  <p class="font-weight-bold">How many users need to access, utilize and/or edit the data on a regular basis?</p>
+                  <input class="mc" type="radio" name="i1b" value=1>10 or more<br>
+                  <input class="mc" type="radio" name="i1b" value=2>4 to 9<br>
+                  <input class="mc" type="radio" name="i1b" value=3>3 or fewer<br>
+                  <div class="col-sm-2" id="i1brisk_submit">
+                    <p class="font-weight-bold" id="i1brisk_text"></p>
+                  </div>
+                </div>
+                <p class="font-weight-bold">Additional information:</p>
+                <textarea class="form-control" name="i1_text" maxlength="1050" rows=9 style="min-width: 100%"
+                placeholder="Please provide additional detail about the number of users and the manner in which data need to be accessed and edited"
+                  aria-describedby="i1_help"></textarea>
+                <small id="i1_help" class="form-text text-muted">
+                  Max 1050 characters
+                </small>
 
-                <p class="font-weight-bold">If errors are introduced to the data, or unauthorized changes are made to the data, is
-                  there a risk of delaying completion of a research project (e.g. extra time would be required to investigate
-                  and correct the mistakes)?</p>
-                <input class="mc" type="radio" name="i2" value=1> Yes, the project would be delayed<br>
-                <input class="mc" type="radio" name="i2" value=2> Yes, but we have planned sufficient time for data cleaning<br>
-                <input class="mc" type="radio" name="i2" value=3> No, this will not delay the project <br>
+                <p class="font-weight-bold">Have measures to account for data entry error, data cleaning, measurement error,
+                  bias and so forth already been addressed in your data management plan and/or research proposal?</p>
+                <input class="mc" type="radio" name="i2" value=1> Yes<br>
+                <input class="mc" type="radio" name="i2" value=2> No<br>
+                <input class="mc" type="radio" name="i2" value=3> It is not possible to account for these issues<br>
+                <div class="col-sm-2" id="i2risk_submit">
+                  <p class="font-weight-bold" id="i2risk_text"></p>
+                </div>
+                <div class="col-sm-2" id="i2risk_extratip">
+                  <p class="font-weight-bold">Pro-tip: write a data management plan and make sure to describe how you will address these issues</p>
+                </div>
+                <p class="font-weight-bold">Additional information:</p>
+                <textarea class="form-control" name="i2_text" maxlength="1050" rows=9 style="min-width: 100%"
+                placeholder="Please provide additional information if it is not possible to account the issues described"
+                  aria-describedby="i2_help"></textarea>
+                <small id="i2_help" class="form-text text-muted">
+                  Max 1050 characters
+                </small>
 
-                <p class="font-weight-bold">Do you require automatic back-ups of the data?</p>
-                <input class="mc" type="radio" name="i3" value=1> Yes<br>
-                <input class="mc" type="radio" name="i3" value=2> No<br>
+                <p class="font-weight-bold">How severe would the impact on your research be if data become corrupted during storage or unauthorized changes are made to the
+                data after collection?</p>
+                <p class="font-italic">Examples of harm include:<p>
+                <ul class="font-italic">
+                  <li>incorrect research conclusions that result in retractions of published articles, reputational damage and/or erroneous influence on public
+                    policy and future research;</li>
+                  <li>financial impact and delay of completion of the research project due to time required to correct the corruption or unauthorized changes</li>
+                </ul>
+                <input class="mc" type="radio" name="i3" value=1> Minimal to none<br>
+                <input class="mc" type="radio" name="i3" value=2> Moderate<br>
+                <input class="mc" type="radio" name="i3" value=3> Severe<br>
+                <div class="col-sm-2" id="i3risk_submit">
+                  <p class="font-weight-bold" id="i3risk_text"></p>
+                </div>
+                <p class="font-weight-bold">Additional information:</p>
+                <textarea class="form-control" name="i3_text" maxlength="1050" rows=9 style="min-width: 100%"
+                placeholder="Please provide additional detail about the serious harms that could result from data corruption or unauthorized changes to the data"
+                  aria-describedby="i3_help"></textarea>
+                <small id="i3_help" class="form-text text-muted">
+                  Max 1050 characters
+                </small>
 
-                <p class="font-weight-bold">How long do the data need to be stored?</p>
-                <input class="mc" type="radio" name="i5" value=1> 10 years after the last publication (non-WMO research)<br>
-                <input class="mc" type="radio" name="i5" value=2> 15 years after the last publication (WMO research)<br>
-                <input class="mc" type="radio" name="i5" value=3> 25 years after the last publication (GCP research)<br>
-                <input class="mc" type="radio" name="i5" value=4> Indefinitely<br>
                 <div id="followuphumans2">
-                  <p class="font-weight-bold">If there are errors in the data, could this have an impact on your research participants
-                    (e.g. inappropriate questions are posed in a follow-up questionnaire; participants need to be contacted
-                    repeatedly to correct mistakes etc.)?</p>
-                  <input class="mc" type="radio" name="i8" value=1> Yes and the impact is serious<br>
-                  <input class="mc" type="radio" name="i8" value=2> Yes, but the impact is minimal<br>
-                  <input class="mc" type="radio" name="i8" value=3> No, there is no impact on participants <br>
+                  <p class="font-weight-bold">If data become corrupted in storage or unauthorized changes are made after collection, could this have a negative
+                    impact on your research participants (e.g. inappropriate questions are posed in a follow-up questionnaire; participants need to be contacted
+                    repeatedly to correct mistakes etc.)</p>
+                  <input class="mc" type="radio" name="i4" value=1> Yes and the impact is serious<br>
+                  <input class="mc" type="radio" name="i4" value=2> Yes, but the impact is minimal<br>
+                  <input class="mc" type="radio" name="i4" value=3> No, there is no impact on participants <br>
+                  <div class="col-sm-2" id="i4risk_submit">
+                    <p class="font-weight-bold" id="i4risk_text"></p>
+                  </div>
+                  <p class="font-weight-bold">Additional information:</p>
+                  <textarea class="form-control" name="i4_text" maxlength="1050" rows=9 style="min-width: 100%"
+                  placeholder="Please provide additional detail about the impact on participants that could result from data corruption or unauthorized changes to the data"
+                    aria-describedby="i4_help"></textarea>
+                  <small id="i4_help" class="form-text text-muted">
+                    Max 1050 characters
+                  </small>
                 </div>
               </div>
             </div>
+
             <div class="card bg-transparent border-0">
               <div class="card-header" id="headingThree">
-                <h2 class="font-weight-bold">Confidentiality Risk</h2>
+                <h2 class="font-weight-bold">Confidentiality Risk Assessment</h2>
                 </h2>
               </div>
               <div class="card-body">
-                <p class="font-weight-bold">If the data in question are leaked to the public, could there be a negative impact on
-                  the
-                  VU’s reputation?</p>
-                <input class="mc" type="radio" name="v6" value=1>Yes <br>
-                <input class="mc" type="radio" name="v6" value=2>No <br>
+                <p class="font-italic">Note that confidentiality risks related to you and your research team's obligations to keep your data confidential. This applies
+                whether or not you are working with data from human subjects and may relate to legal, ethical and/or contractual obligations</p>
+                <p class="font-weight-bold">If the data in question are not kept confidential, how severely would the VU’s reputation be harmed?</p>
+                <p class="font-italic">Examples of reputational harm include:<p>
+                <ul class="font-italic">
+                  <li>loss of public trust;</li>
+                  <li>loss of trust from external partners; damage to third party relationships</li>
+                  <li>reputational damage to individual researchers</li>
+                </ul>
+                <input class="mc" type="radio" name="c1" value=1>Severely <br>
+                <input class="mc" type="radio" name="c1" value=2>Moderately<br>
+                <input class="mc" type="radio" name="c1" value=3>Minimally<br>
+                <div class="col-sm-2" id="c1risk_submit">
+                  <p class="font-weight-bold" id="c1risk_text"></p>
+                </div>
+                <p class="font-weight-bold">Additional information:</p>
+                <textarea class="form-control" name="c1_text" maxlength="1050" rows=9 style="min-width: 100%"
+                placeholder="Please provide additional detail about the severity of the reputational damage to the VU is the data are not kept confidential"
+                  aria-describedby="c1_help"></textarea>
+                <small id="c1_help" class="form-text text-muted">
+                  Max 1050 characters
+                </small>
 
-                <p class="font-weight-bold">Are the data in question subject to intellectual property law?</p>
-                <input class="mc" type="radio" name="v7" value=1>Yes <br>
-                <input class="mc" type="radio" name="v7" value=2>No <br>
-
-                <p class="font-weight-bold">Do users need to be able to access the data outside the VU-environment?</p>
-                <input class="mc" type="radio" name="v8" value=1>Yes <br>
-                <input class="mc" type="radio" name="v8" value=2>No <br>
+                <p class="font-weight-bold">If the data in question are not kept confidential,
+                  how severe would the legal and/or contractual liabilities be for the VU (e.g. fines, legal action by third party partners)? </p>
+                <input class="mc" type="radio" name="c2" value=1>Very severe<br>
+                <input class="mc" type="radio" name="c2" value=2>Moderately severe<br>
+                <input class="mc" type="radio" name="c2" value=3>Minimally to not at all severe<br>
+                <div class="col-sm-2" id="c2risk_submit">
+                  <p class="font-weight-bold" id="c2risk_text"></p>
+                </div>
+                <p class="font-weight-bold">Additional information:</p>
+                <textarea class="form-control" name="c2_text" maxlength="1050" rows=9 style="min-width: 100%"
+                placeholder="Please provide additional detail about the severity of the liabilities the VU could face if the data are not kept confidential"
+                  aria-describedby="c2_help"></textarea>
+                <small id="c2_help" class="form-text text-muted">
+                  Max 1050 characters
+                </small>
               </div>
             </div>
+
+            <!-- Note: in earlier versions I used b, i and v as the variable labels for the Dutch BIV
+          I have updated all of the other variables to A, I and C, but I will leave the Privacy
+        labels as v to avoid making an error when changing the variable names -->
+
             <div class="card bg-transparent border-0" id="followuphumans3">
               <div class="card-header" id="headingFour">
-                <h2 class="font-weight-bold">Privacy Risk</h2>
+                <h2 class="font-weight-bold">Privacy Risk Assessment</h2>
                 </h2>
               </div>
               <div class="card-body">
@@ -209,6 +314,9 @@
                 <input class="mc" type="checkbox" id="v1j" value=1> Physically-impaired individuals<br>
                 <input class="mc" type="checkbox" id="v1k" value=1> Mentally-impaired individuals<br>
                 <input class="mc" type="checkbox" id="v1l" value=1> Racial, religious, ethic or other visible minority<br>
+                <div class="col-sm-2" id="v1risk_submit">
+                  <p class="font-weight-bold" id="v1risk_text"></p>
+                </div>
 
                 <p class="font-weight-bold">Which of the following best describes the data you are collecting (multiple answers
                   possible)?</p>
@@ -350,6 +458,9 @@
                     <input class="mc" type="radio" name="v23i2" value=2> No<br>
                   </div>
                 </div>
+                <div class="col-sm-2" id="v23risk_submit">
+                  <p class="font-weight-bold" id="v23risk_text"></p>
+                </div>
 
                 <p class="font-weight-bold">Would it be possible to infer sensitive information (e.g. sexual preferences,
                   religion,
@@ -362,19 +473,29 @@
                   inferred that all participants in the dataset with those characteristics have HIV)? </p>
                 <input class="mc" type="radio" name="v4" value=1>Yes <br>
                 <input class="mc" type="radio" name="v4" value=2>No <br>
+                <div class="col-sm-2" id="v4risk_submit">
+                  <p class="font-weight-bold" id="v4risk_text"></p>
+                </div>
 
-                <p class="font-weight-bold">If the data in question are leaked to the public, could there be a negative impact on
+                <p class="font-weight-bold">If the data in question are leaked to the public, would there be a negative impact on
                   the
                   participant(s)?</p>
                 <input class="mc" type="radio" name="v5" value=1>Yes <br>
                 <input class="mc" type="radio" name="v5" value=2>No <br>
+                <div class="col-sm-2" id="v5risk_submit">
+                  <p class="font-weight-bold" id="v5risk_text"></p>
+                </div>
 
               </div>
             </div>
-            <div class="col-sm-3" id="after_submit">
+            <div class="col-sm-4" id="after_submit">
+              <h3 class="font-weight-bold">Overall data classification score
+              </h3>
+              <p class="font-italic">Individual scores can now be seen below your responses to the individual questions</p>
               <p class="font-weight-bold" id="availability"></p>
               <p class="font-weight-bold" id="integrity"></p>
               <p class="font-weight-bold" id="confidentiality"></p>
+              <p class="font-weight-bold" id="privacy"></p>
             </div>
 
           </form>
