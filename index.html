@@ -391,6 +391,9 @@
                   <input class="mc" type="checkbox" id="v23d3" value=1> Speech analysis<br>
                   <input class="mc" type="checkbox" id="v23d4" value=1> Testing of executive function<br>
                   <input class="mc" type="checkbox" id="v23d5" value=1> Financial games<br>
+                  <input class="mc" type="checkbox" id="v23d6" value=1> Personality tests<br>
+                  <input class="mc" type="checkbox" id="v23d7" value=1> Memory tests (e.g. MMSE)<br>
+                  <input class="mc" type="checkbox" id="v23d8" value=1> Other neuropsychological testing<br>
                 </div>
 
                 <input class="mc" type="checkbox" id="ses" value=1>Social-economic
@@ -419,6 +422,10 @@
                       sensitive (i.e. if a person’s answers were made known to others, could it harm the individual)?</p>
                     <input class="mc" type="radio" name="v23g2" value=1> Yes<br>
                     <input class="mc" type="radio" name="v23g2" value=2> No<br>
+                    <p class="font-weight-bold">Can the participant be directly identified in the audiovisual recoding (i.e.
+                      names are stated, faces are recorded etc.)?</p>
+                    <input class="mc" type="radio" name="v23g3" value=1> Yes<br>
+                    <input class="mc" type="radio" name="v23g3" value=2> No<br>
                   </div>
                 </div>
 
@@ -462,29 +469,31 @@
                   <p class="font-weight-bold" id="v23risk_text"></p>
                 </div>
 
-                <p class="font-weight-bold">Would it be possible to infer sensitive information (e.g. sexual preferences,
-                  religion,
-                  health status, political opinions, criminal activity) about an individual by combining information,
-                  either
-                  within the research data or with public information, or through attribute disclosure (e.g. if a subset
-                  of
-                  participants with the same characteristics all have the same sensitive condition, such as HIV, it can
-                  be
-                  inferred that all participants in the dataset with those characteristics have HIV)? </p>
+                <p class="font-weight-bold">Would it be possible to infer sensitive information (such as sexual preferences,
+                  religion, health status, political opinions, criminal activity) about an individual by combining the research data with publicly available data,
+                  or by combining variables within the dataset(s) to find unique individuals, or through attribute disclosure (e.g. if a subset
+                  of participants with the same characteristics all have the same sensitive condition, such as HIV, it can
+                  be inferred that all participants in the dataset with those characteristics have HIV)? </p>
                 <input class="mc" type="radio" name="v4" value=1>Yes <br>
                 <input class="mc" type="radio" name="v4" value=2>No <br>
                 <div class="col-sm-2" id="v4risk_submit">
                   <p class="font-weight-bold" id="v4risk_text"></p>
                 </div>
 
-                <p class="font-weight-bold">If the data in question are leaked to the public, would there be a negative impact on
-                  the
-                  participant(s)?</p>
+                <p class="font-weight-bold">If the data in question are leaked to the public, could this have a negative impact on
+                  the participant(s) (e.g. physical, mental, social or financial harm)?</p>
                 <input class="mc" type="radio" name="v5" value=1>Yes <br>
                 <input class="mc" type="radio" name="v5" value=2>No <br>
                 <div class="col-sm-2" id="v5risk_submit">
                   <p class="font-weight-bold" id="v5risk_text"></p>
                 </div>
+                <p class="font-weight-bold">Additional information:</p>
+                <textarea class="form-control" name="c2_text" maxlength="1050" rows=9 style="min-width: 100%"
+                placeholder="Please document any additional information regarding privacy that has not been documented elsewhere, such as in a data management plan or a data protection impact assessment"
+                  aria-describedby="c2_help"></textarea>
+                <small id="c2_help" class="form-text text-muted">
+                  Max 1050 characters
+                </small>
 
               </div>
             </div>
@@ -496,6 +505,7 @@
               <p class="font-weight-bold" id="integrity"></p>
               <p class="font-weight-bold" id="confidentiality"></p>
               <p class="font-weight-bold" id="privacy"></p>
+              <p class="font-italic">Click on "Print Form" below to print this document or save it as a PDF</p>
             </div>
 
           </form>

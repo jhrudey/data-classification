@@ -7,9 +7,9 @@ function humandata() {
       document.getElementById("followuphumans3").style.display = "block";
     }
   else {
-    document.getElementById("followuphumans1").style.display = "block";
-    document.getElementById("followuphumans2").style.display = "block";
-    document.getElementById("followuphumans3").style.display = "block";
+    document.getElementById("followuphumans1").style.display = "none";
+    document.getElementById("followuphumans2").style.display = "none";
+    document.getElementById("followuphumans3").style.display = "none";
     }
   }
 
@@ -345,6 +345,9 @@ document.getElementById("a5risk_text").innerHTML = "Risk level: " + a5risk;
   var v23d3 = document.getElementById('v23d3').checked;
   var v23d4 = document.getElementById('v23d4').checked;
   var v23d5 = document.getElementById('v23d5').checked;
+  var v23d6 = document.getElementById('v23d6').checked;
+  var v23d7 = document.getElementById('v23d7').checked;
+  var v23d8 = document.getElementById('v23d8').checked;
   var v23e1 = document.getElementById('v23e1').checked;
   var v23e2 = document.getElementById('v23e2').checked;
   var v23e3 = document.getElementById('v23e3').checked;
@@ -355,6 +358,7 @@ document.getElementById("a5risk_text").innerHTML = "Risk level: " + a5risk;
   var v23f = document.getElementById('v23f').checked;
   var v23g1 = document.dataclass.v23g1.value;
   var v23g2 = document.dataclass.v23g2.value;
+  var v23g3 = document.dataclass.v23g3.value;
   var v23h1 = document.dataclass.v23h1.value;
   var v23h2 = document.dataclass.v23h2.value;
   var v23h3 = document.dataclass.v23h3.value;
@@ -377,27 +381,34 @@ document.getElementById("a5risk_text").innerHTML = "Risk level: " + a5risk;
     v1total = 2;
   } else if (v1b == true || v1c == 2) {
     v1total = 1;
-  } else {
+  } else if (v1a == true){
     v1total = 0;
+  } else {
+    v1total = -1;
   }
 
 
-  if (v23a == true || v23b == true || v23c1 == true || v23c11 == true || v23c12 == true || v23c13 == true || v23c14 == true ||
+  if (v23a == true || v23b == true || v23c11 == true || v23c12 == true || v23c13 == true || v23c14 == true ||
     v23c15 == true || v23c16 == true || v23c17 == true || v23c18 == true || v23c19 == true || v23d3 == true || v23d4 == true ||
-    v23e3 == true || v23e4 == true || v23f == true | v23g2 == 1 || v23h1 == 1 || v23h2 == 1 || v23i2 == 1) {
+    v23d6 == true || v23d7 == true || v23d8 == true || v23e3 == true ||
+    v23e6 == true || v23f == true || v23g2 == 1 || v23g3 == 1 || v23h1 == 1 || v23h2 == 1 || v23h3 == 1 || v23i2 == 1) {
     v23total = 2;
-  } else if (v23c2 == true || v23c3 == true || v23c4 == true || v23c5 == true || v23c5 == true || v23c6 == true || v23c7 == true ||
-    v23c8 == true || v23c9 == true || v23c10 == true || v23d1 == true || v23d2 == true || v23e2 == true || v23e5 == true ||
-    v23g2 == 2 || v23h3 == 1 || v23i1 == 1 || v23i2 == 2) {
+  } else if (v23c1 == true || v23c2 == true || v23c3 == true || v23c4 == true || v23c5 == true || v23c6 == true || v23c7 == true ||
+    v23c8 == true || v23c9 == true || v23c10 == true || v23d1 == true || v23d2 == true || v23e2 == true ||
+    v23e4 == true || v23e5 == true || v23e7 == true || v23g2 == 2 || v23g3 == 2 ||  v23i1 == 1 || v23i2 == 2) {
     v23total = 1;
-  } else {
+  } else if (v23d5 == true || v23e1 == true || v23g1 == 1 || v23h1 == 2 || v23h2 == 2 || v23h3 == 2){
     v23total = 0;
+  } else {
+    v23total = -1;
   }
 
   if (v4 == 1) {
     v4total = 2;
-  } else {
+  } else if (v4 == 2){
     v4total = 0;
+  } else {
+    v4total = -1;
   }
 
   //determine individual levels of risk
@@ -461,6 +472,7 @@ document.getElementById("a5risk_text").innerHTML = "Risk level: " + a5risk;
 
   v1234total = v1total + v23total + v4total
 
+
   if (v1234total >= 6) {
     privrisk = "VERY HIGH"
   } else if ((v1234total >= 2 && v1234total < 6) || v5 == 1 ) {
@@ -477,8 +489,8 @@ document.getElementById("a5risk_text").innerHTML = "Risk level: " + a5risk;
 
 //present overall risk score
   document.getElementById("after_submit").style.display = "block";
-  document.getElementById("availability").innerHTML = "Availibility risk is " + availrisk;
-  document.getElementById("integrity").innerHTML = "Integrity risk is " + integrisk;
-  document.getElementById("confidentiality").innerHTML = "Confidentiality risk is " + confidrisk;
-  document.getElementById("privacy").innerHTML = "Privacy risk is " + privrisk;
+  document.getElementById("availability").innerHTML = "Overall availibility risk is " + availrisk;
+  document.getElementById("integrity").innerHTML = "Overall integrity risk is " + integrisk;
+  document.getElementById("confidentiality").innerHTML = "Overall confidentiality risk is " + confidrisk;
+  document.getElementById("privacy").innerHTML = "Overall privacy risk is " + privrisk;
 }
