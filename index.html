@@ -30,7 +30,11 @@
                   data, video data, physical measurements). Therefore, it is recommended to carry out this data classification for every data asset
                   described in your data management plan</p>
                 <p class="font-weight-bold">Data asset</p>
-                <textarea class="form-control" name="dataassets" maxlength="350" rows=3 style="min-width: 100%" placeholder="Required field"></textarea>
+                <textarea class="form-control" name="dataassets" maxlength="350" rows=3 style="min-width: 100%" placeholder="Required field"
+                aria-describedby="dataassethelp"></textarea>
+                <small id="dataassethelp" class="form-text text-muted">
+                Max 350 characters
+                </small>
                 <p class="font-weight-bold">Do you collect data from human subjects?</p>
                 <input class="mc" type="radio" name="privacy" value=1 onchange="humandata();">Yes<br>
                 <input class="mc" type="radio" name="privacy" value=2 onchange="humandata();">No<br>
@@ -42,12 +46,16 @@
               <div class="card-body">
 
                 <p class="font-weight-bold">How readily do your data need to be available to you or your research team?</p>
-                <input class="mc" type="radio" name="b1" value=1> 24/7<br>
-                <input class="mc" type="radio" name="b1" value=2> Frequently, but not 24/7 (e.g. 9-5, Mon-Fri or always
+                <input class="mc" type="radio" name="a1" value=1> 24/7<br>
+                <input class="mc" type="radio" name="a1" value=2> Frequently, but not 24/7 (e.g. 9-5, Mon-Fri or always
                 available unless system maintenance is required)<br>
-                <input class="mc" type="radio" name="b1" value=3> Anything less frequent than typical work hours<br>
+                <input class="mc" type="radio" name="a1" value=3> Anything less frequent than typical work hours<br>
                 <p class="font-weight-bold">Additional information:</p>
-                <textarea class="form-control" name="b1_text" maxlength="1050" rows=9 style="min-width: 100%" placeholder="Please provide additional detail about how readily you need to access the data"></textarea>
+                <textarea class="form-control" name="a1_text" maxlength="1050" rows=9 style="min-width: 100%"
+                placeholder="Please provide additional detail about how readily you need to access the data" aria-describedby="a1_help"></textarea>
+                <small id="a1_help" class="form-text text-muted">
+                Max 1050 characters
+                </small>
 
                 <p class="font-weight-bold">How long would data need to be unavailable for your research project to suffer serious harm
                   (i.e. not just minor inconvenciences)? </p>
@@ -62,37 +70,57 @@
                         their professional development;</li>
                       <li>financial costs due to delays</li>
                     </ul>
-                    <input class="mc" type="radio" name="b2" value=1> Up to one hour<br>
-                    <input class="mc" type="radio" name="b2" value=2> Up to one day<br>
-                    <input class="mc" type="radio" name="b2" value=3> Up to one week<br>
-                    <input class="mc" type="radio" name="b2" value=4> Up to one month<br>
-                    <textarea class="form-control" name="b2_text" maxlength="1050" rows=9 style="min-width: 100%" placeholder="Please provide additional detail about the serious harms the could result from unavailable data"></textarea>
+                    <input class="mc" type="radio" name="a2" value=1> Up to one hour<br>
+                    <input class="mc" type="radio" name="a2" value=2> Up to one day<br>
+                    <input class="mc" type="radio" name="a2" value=3> Up to one week<br>
+                    <input class="mc" type="radio" name="a2" value=4> Up to one month<br>
+                    <textarea class="form-control" name="a2_text" maxlength="1050" rows=9 style="min-width: 100%"
+                    placeholder="Please provide additional detail about the serious harms the could result from unavailable data"
+                    aria-describedby="a2_help"></textarea>
+                    <small id="a2_help" class="form-text text-muted">
+                    Max 1050 characters
+                    </small>
 
                     <p class="font-weight-bold">Are there specific situations where access to the data absolutely <span style="font-style:italic">MUST NOT</span> be lost?
                       (e.g. during long computations or during scheduled batch processing)</p>
-                    <input class="mc" type="radio" name="b3" value=1> Yes<br>
-                    <input class="mc" type="radio" name="b3" value=2> No<br>
-                    <textarea class="form-control" name="b3_text" maxlength="1050" rows=9 style="min-width: 100%" placeholder="Please provide additional detail about the situations where access to the data MUST NOT be lost"></textarea>
+                    <input class="mc" type="radio" name="a3" value=1> Yes<br>
+                    <input class="mc" type="radio" name="a3" value=2> No<br>
+                    <textarea class="form-control" name="a3_text" maxlength="1050" rows=9 style="min-width: 100%"
+                    placeholder="Please provide additional detail about the situations where access to the data MUST NOT be lost"
+                    aria-describedby="a3_help"></textarea>
+                    <small id="a3_help" class="form-text text-muted">
+                    Max 1050 characters
+                    </small>
 
                     <p class="font-weight-bold">How severely would the research project be harmed if the data are lost? Consider the worst possible scenario, i.e.
                       at the start of data collection, data loss may not be a major issue, but loss of the data is most definitely an issue once data collection is
                       complete</p>
-                    <input class="mc" type="radio" name="b4" value=1>Loss of the data would be a disaster; no recovery is possible<br>
-                    <input class="mc" type="radio" name="b4" value=2>Loss of the data is undesirable, but the loss would only mildly
+                    <input class="mc" type="radio" name="a4" value=1>Loss of the data would be a disaster; no recovery is possible<br>
+                    <input class="mc" type="radio" name="a4" value=2>Loss of the data is undesirable, but the loss would only mildly
                     impact the research goals, budget or reputations of the researcher and/or the VU<br>
-                    <input class="mc" type="radio" name="b4" value=3>Loss of data is not an issue; data can be easily reproduced as needed<br>
+                    <input class="mc" type="radio" name="a4" value=3>Loss of data is not an issue; data can be easily reproduced as needed<br>
                     <p class="font-weight-bold">Additional information:</p>
-                    <textarea class="form-control" name="b4_text" maxlength="1050" rows=9 style="min-width: 100%" placeholder="Please provide additional detail about how your research project would be affected if the data were lost"></textarea>
+                    <textarea class="form-control" name="a4_text" maxlength="1050" rows=9 style="min-width: 100%"
+                    placeholder="Please provide additional detail about how your research project would be affected if the data were lost"
+                    aria-describedby="a4_help"></textarea>
+                    <small id="a4_help" class="form-text text-muted">
+                    Max 1050 characters
+                    </small>
 
                     <p class="font-weight-bold">How long will the data need to be stored and maintained?</p>
-                    <input class="mc" type="radio" name="b5" value=1>10 years after the last research publication is published<br>
+                    <input class="mc" type="radio" name="a5" value=1>10 years after the last research publication is published<br>
                     <div id="followuphumans1">
-                      <input class="mc" type="radio" name="b5" value=2 label>15 years after the last treatment is administered to the participants<br>
-                      <input class="mc" type="radio" name="b5" value=3>25 years after completion of the trial<br>
+                      <input class="mc" type="radio" name="a5" value=2 label>15 years after the last treatment is administered to the participants<br>
+                      <input class="mc" type="radio" name="a5" value=3>25 years after completion of the trial<br>
                     </div>
-                    <input class="mc" type="radio" name="b5" value=4>Indefinitely<br>
+                    <input class="mc" type="radio" name="a5" value=4>Indefinitely<br>
                     <p class="font-weight-bold">Additional information:</p>
-                    <textarea class="form-control" name="b5_text" maxlength="1050" rows=9 style="min-width: 100%" placeholder="Please provide additional detail about the duration for which your data need to be stored"></textarea>
+                    <textarea class="form-control" name="a5_text" maxlength="1050" rows=9 style="min-width: 100%"
+                    placeholder="Please provide additional detail about the duration for which your data need to be stored"
+                    aria-describedby="a5_help"></textarea>
+                    <small id="a5_help" class="form-text text-muted">
+                    Max 1050 characters
+                    </small>
               </div>
             </div>
             <div class="card bg-transparent border-0">

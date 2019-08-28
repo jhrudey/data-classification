@@ -17,17 +17,19 @@ function humandata() {
 
 function check() {
 
-  var b1 = document.dataclass.b1.value;
-  var b2 = document.dataclass.b2.value;
-  var b3 = document.dataclass.b3.value;
-  var b4 = document.dataclass.b4.value;
-  var b5 = document.dataclass.b4.value;
+  var a1 = document.dataclass.a1.value;
+  var a2 = document.dataclass.a2.value;
+  var a3 = document.dataclass.a3.value;
+  var a4 = document.dataclass.a4.value;
+  var a5 = document.dataclass.a5.value;
   var availrisk = "";
 
 
-  if (b1 == 1 || b2 == 1 || b3 == 1 || b4 == 1 || b5 == 3 || b5 ==4) {
+//determine overall availability risk
+
+  if (a1 == 1 || a2 == 1 || a3 == 1 || a4 == 1 || a5 == 3 || a5 ==4) {
     availrisk = "HIGH";
-  } else if (b1 == 2 || b2 == 2 || b4 == 2 || b5 == 2) {
+  } else if (a1 == 2 || a2 == 2 || a4 == 2 || a5 == 2) {
     availrisk = "MEDIUM";
   } else {
     availrisk = "LOW";
@@ -158,11 +160,3 @@ function check() {
   document.getElementById("integrity").innerHTML = "Integrity risk is " + integrisk;
   document.getElementById("confidentiality").innerHTML = "Confidentiality risk is " + confidrisk;
 }
-
-//export input as word document
-
-jQuery(document).ready(function($) {
-  $("a.word-export").click(function(event) {
-    $("#page-content").wordExport();
-  });
-});
