@@ -70,7 +70,7 @@ _open text field_
 
 
 #### Total “Availability” Score
-	1. If at least one field is coded as HIGH, the total score is HIGH
+  1. If at least one field is coded as HIGH, the total score is HIGH
   1. If no fields are coded as HIGH, but at least one field is coded as MEDIUM, the total score is MEDIUM
   1. If no fields are coded as HIGH or MEDIUM, but at least one if coded as LOW, the total score is LOW
   1. If no fields are answered, the score is UNKNOWN
@@ -185,10 +185,10 @@ _following section only appears if research collects data from human subjects_
   *	Racial, religious or other visible minority _score as +2_
 
 #### Total question score
-	1. If at least one question is scored as +2, overall score is +2
-	1. If no questions are scored +2, but at least one question is scored +1, overall score is +1
-	1. If highest score is 0, overall score is 0
-  1. If nothing is selection, overall score in UNKNOWN
+  1. If at least one field is coded as "+2", the total score is "+2"
+  1. If no fields are coded as "+2", but at least one field is coded as "+1", the total score is "+1"
+  1. If no fields are coded as "+2" or "+1", but at least one if coded as "0", the total score is "0"
+  1. If no fields are answered, the score is UNKNOWN
 
 * Which of the following best describes the data you are collecting (multiple answers possible)?
 _NB: don’t forget that you should complete this tool for each data asset described in your data management plan_
@@ -282,21 +282,21 @@ _NB: health-related data and physical measurements are addressed separately_
         *	No _score as +1_
 
 #### Total question score
-	1. If at least one question is scored as +2, overall score is +2
-	1. If no questions are scored +2, but at least one question is scored +1, overall score is +1
-	1. If highest score is 0, overall score is 0
-  1. If nothing is selection, overall score in UNKNOWN
+  1. If at least one field is coded as "+2", the total score is "+2"
+  1. If no fields are coded as "+2", but at least one field is coded as "+1", the total score is "+1"
+  1. If no fields are coded as "+2" or "+1", but at least one if coded as "0", the total score is "0"
+  1. If no fields are answered, the score is UNKNOWN
 
 *	Would it be possible to infer sensitive information (e.g. sexual preferences, religion, health status, political opinions, criminal activity) about an individual by combining information, either within the research data or with public information, or through attribute disclosure (e.g. if a subset of participants with the same characteristics all have the same sensitive condition, such as HIV, it can be inferred that all participants in the dataset with those characteristics have HIV)?
   *	Yes _score as +2_
   *	No _score as 0_
 
-#### Overall score for previous three questions
-	1. If total score is 6 or higher, score as VERY HIGH RISK
-	1. If total score is 2-6, score as HIGH RISK
-	1. If total score is 1-2, score as MEDIUM RISK
-	1. If total score is 0, score as LOW RISK
-  1. If no score was generated, score as UNKNOWN
+#### Sum of previous three question scores
+  1. If sum is six or more, the total score is VERY HIGH
+  1. If sum is two, three, four or five, the total score is HIGH
+  1. If sum is one, the total score is MEDIUM
+  1. If sum is zero, the total score is LOW
+  1. If no fields are answered, the score is UNKNOWN
 
 *	If the data in question are leaked to the public, could there be a negative impact on the participant(s)? Describe the negative impact that could occur in the text box (or refer to the description of risks to participants that you documented in your data protection impact assessment).
   *	Examples of negative impact include:
@@ -312,6 +312,7 @@ _NB: health-related data and physical measurements are addressed separately_
 _open text field_
 
 #### Total “Privacy” Score
+
   1. If at least one field is coded as VERY HIGH, the total score is HIGH
   1. If no fields are coded as VERY HIGH, but at least one field is coded as HIGH, the total score is HIGH
   1. If no fields are coded as HIGH or VERY HIGH, but at least one field is coded as MEDIUM, the total score is MEDIUM
