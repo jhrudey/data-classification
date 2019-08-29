@@ -1,6 +1,6 @@
-# BIV-assessment for Researchers Version 1.3:
+# BIV-assessment for Researchers Version 1.3
 ## Translation of BIV-assessment for researchers (Derived from general VU BIV assessment)
-_this markdown document shows the overall structure of the tool and the coding of the risks that is behind the scenes in the online tool_
+_This markdown document shows the overall structure of the tool and the coding of the risks that is behind the scenes in the online tool_
 
 The security risks for your data can vary depending on nature of your data (i.e. raw data, processed data, video data, physical measurements), therefore, it is recommended to carry out this BIV assessment or analysis for each data asset described in your data management plan
 
@@ -11,7 +11,7 @@ _open text field_
   * Yes _questions asking about human subjects will appear in the form_
   * No _questions about human subjects will NOT appear in the form_
 
-###“Availability”-related security risk assessment
+### “Availability”-related security risk assessment
 
 * How readily do your data need to be available?
   * 24/7, i.e. never not available _Code as HIGH_
@@ -31,10 +31,10 @@ _open text field_
     * Inability of temporary research staff, in particular PhD candidates, to complete their work on time, thus damaging their professional development
     * Financial costs due to delays_
 
-  * Max. 1 hour  Code as HIGH
-  * Max. 1 day  Code as MEDIUM
-  *	Max. 1 week  Code as LOW
-  *	Max. 1 month  Code as LOW
+  * Max. 1 hour _Code as HIGH_
+  * Max. 1 day _Code as MEDIUM_
+  *	Max. 1 week _Code as LOW_
+  *	Max. 1 month _Code as LOW_
 
 * Additional information:
 _open text field_
@@ -69,14 +69,14 @@ _open text field_
 _open text field_
 
 
-####Total “Availability” Score:
-	If at least one field is coded as HIGH, the total score is HIGH
-  If no fields are coded as HIGH, but at least one field is coded as MEDIUM, the total score is MEDIUM
-  If no fields are coded as HIGH or MEDIUM, but at least one if coded as LOW, the total score is LOW
-  If no fields are answered, the score is UNKNOWN
+#### Total “Availability” Score
+	1. If at least one field is coded as HIGH, the total score is HIGH
+  1. If no fields are coded as HIGH, but at least one field is coded as MEDIUM, the total score is MEDIUM
+  1. If no fields are coded as HIGH or MEDIUM, but at least one if coded as LOW, the total score is LOW
+  1. If no fields are answered, the score is UNKNOWN
 
 
-###“Integrity”-related security risks assessment
+### “Integrity”-related security risks assessment
 
 *	Do multiple users need to be able to access, utilize and/or edit the data simultaneously, thereby increasing the risk of data corruption/unauthorized modification?
   *	No _Code as LOW_
@@ -85,9 +85,9 @@ _open text field_
       * All users can access the data concurrently, but the data doesn’t need to be edited simultaneously _Code as MEDIUM_
 	    * Data must be accessible and editable for multiple users simultaneously _Code as HIGH_
 	  * How many users need to access, utilize and/or edit the data on a regular basis?
-	    * >=10 _Code as HIGH_
-	    * 4-9 _Code as MEDIUM_
-	    * <=3 _Code as LOW_
+	    * Ten or more _Code as HIGH_
+	    * Four to nine _Code as MEDIUM_
+	    * Three or fewer _Code as LOW_
 * Additional information:
 _open text field_
 
@@ -127,12 +127,11 @@ _following question only appears if research collects data from human subjects_
 _open text field_
 
 
-####Total “Integrity” Score:
-	If at least one field is coded as HIGH, the total score is HIGH
-  If no fields are coded as HIGH, but at least one field is coded as MEDIUM, the total score is MEDIUM
-  If no fields are coded as HIGH or MEDIUM, but at least one if coded as LOW, the total score is LOW
-  If no fields are answered, the score is UNKNOWN
-
+#### Total “Integrity” Score
+  1. If at least one field is coded as HIGH, the total score is HIGH
+  1. If no fields are coded as HIGH, but at least one field is coded as MEDIUM, the total score is MEDIUM
+  1. If no fields are coded as HIGH or MEDIUM, but at least one if coded as LOW, the total score is LOW
+  1. If no fields are answered, the score is UNKNOWN
 
 ### “Confidentiality”-related security risks
 
@@ -159,14 +158,14 @@ _open text field_
 _open text field_
 
 
-#### Total “Confidentiality” Score:
-  If at least one field is coded as HIGH, the total score is HIGH
-  If no fields are coded as HIGH, but at least one field is coded as MEDIUM, the total score is MEDIUM
-  If no fields are coded as HIGH or MEDIUM, but at least one if coded as LOW, the total score is LOW
-  If no fields are answered, the score is UNKNOWN
+#### Total “Confidentiality” Score
+  1. If at least one field is coded as HIGH, the total score is HIGH
+  1. If no fields are coded as HIGH, but at least one field is coded as MEDIUM, the total score is MEDIUM
+  1. If no fields are coded as HIGH or MEDIUM, but at least one if coded as LOW, the total score is LOW
+  1. If no fields are answered, the score is UNKNOWN
 
 _following section only appears if research collects data from human subjects_
-###“Privacy”- related security risks
+### “Privacy”- related security risks
 
 * How would you describe your research participants (multiple answers possible)?
   * Healthy adults _score as 0_
@@ -185,11 +184,11 @@ _following section only appears if research collects data from human subjects_
   *	Mentally-impaired _score as +2_
   *	Racial, religious or other visible minority _score as +2_
 
-#### Total question score:
-	If at least one question is scored as +2, overall score is +2
-	If no questions are scored +2, but at least one question is scored +1, overall score is +1
-	If highest score is 0, overall score is 0
-  If nothing is selection, overall score in UNKNOWN
+#### Total question score
+	1. If at least one question is scored as +2, overall score is +2
+	1. If no questions are scored +2, but at least one question is scored +1, overall score is +1
+	1. If highest score is 0, overall score is 0
+  1. If nothing is selection, overall score in UNKNOWN
 
 * Which of the following best describes the data you are collecting (multiple answers possible)?
 _NB: don’t forget that you should complete this tool for each data asset described in your data management plan_
@@ -282,22 +281,22 @@ _NB: health-related data and physical measurements are addressed separately_
         *	Yes _score as +2_
         *	No _score as +1_
 
-#### Total question score:
-  If at least one question is scored as +2, overall score is +2
-  If no questions are scored +2, but at least one question is scored +1, overall score is +1
-  If highest score is 0, overall score is 0
-  If nothing is selection, overall score in UNKNOWN
+#### Total question score
+	1. If at least one question is scored as +2, overall score is +2
+	1. If no questions are scored +2, but at least one question is scored +1, overall score is +1
+	1. If highest score is 0, overall score is 0
+  1. If nothing is selection, overall score in UNKNOWN
 
 *	Would it be possible to infer sensitive information (e.g. sexual preferences, religion, health status, political opinions, criminal activity) about an individual by combining information, either within the research data or with public information, or through attribute disclosure (e.g. if a subset of participants with the same characteristics all have the same sensitive condition, such as HIV, it can be inferred that all participants in the dataset with those characteristics have HIV)?
   *	Yes _score as +2_
   *	No _score as 0_
 
-#### Overall score for previous three questions:
-	If total score is 6 or higher, score as VERY HIGH RISK
-	If total score is 2-6, score as HIGH RISK
-	If total score is 1-2, score as MEDIUM RISK
-	If total score is 0, score as LOW RISK
-  If no score was generated, score as UNKNOWN
+#### Overall score for previous three questions
+	1. If total score is 6 or higher, score as VERY HIGH RISK
+	1. If total score is 2-6, score as HIGH RISK
+	1. If total score is 1-2, score as MEDIUM RISK
+	1. If total score is 0, score as LOW RISK
+  1. If no score was generated, score as UNKNOWN
 
 *	If the data in question are leaked to the public, could there be a negative impact on the participant(s)? Describe the negative impact that could occur in the text box (or refer to the description of risks to participants that you documented in your data protection impact assessment).
   *	Examples of negative impact include:
@@ -312,9 +311,9 @@ _NB: health-related data and physical measurements are addressed separately_
 * Additional information:
 _open text field_
 
-#### Total “Privacy” Score:
-  If at least one field is coded as VERY HIGH, the total score is HIGH
-  If no fields are coded as VERY HIGH, but at least one field is coded as HIGH, the total score is HIGH
-  If no fields are coded as HIGH or VERY HIGH, but at least one field is coded as MEDIUM, the total score is MEDIUM
-  If no fields are coded as VERY HIGH, HIGH or MEDIUM, but at least one if coded as LOW, the total score is LOW
-  If no fields are answered, the score is UNKNOWN
+#### Total “Privacy” Score
+  1. If at least one field is coded as VERY HIGH, the total score is HIGH
+  1. If no fields are coded as VERY HIGH, but at least one field is coded as HIGH, the total score is HIGH
+  1. If no fields are coded as HIGH or VERY HIGH, but at least one field is coded as MEDIUM, the total score is MEDIUM
+  1. If no fields are coded as VERY HIGH, HIGH or MEDIUM, but at least one if coded as LOW, the total score is LOW
+  1. If no fields are answered, the score is UNKNOWN
