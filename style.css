@@ -348,6 +348,10 @@ a:link {
   display: none;
 }
 
+#privacy {
+  display: none;
+}
+
 #submitbtn {
   background: green;
   transition-duration: .5s;
@@ -364,6 +368,7 @@ a:link {
   background: green;
   transition-duration: .5s;
   margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 #printbtn:hover {

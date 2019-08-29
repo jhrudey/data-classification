@@ -1,3 +1,9 @@
+//enable tooltips
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
 //display human-related data questions
 function humandata() {
   var privacy  = document.dataclass.privacy.value;
@@ -5,11 +11,13 @@ function humandata() {
       document.getElementById("followuphumans1").style.display = "block";
       document.getElementById("followuphumans2").style.display = "block";
       document.getElementById("followuphumans3").style.display = "block";
+      document.getElementById("privacy").style.display = "block";
     }
   else {
     document.getElementById("followuphumans1").style.display = "none";
     document.getElementById("followuphumans2").style.display = "none";
     document.getElementById("followuphumans3").style.display = "none";
+    document.getElementById("privacy").style.display = "none";
     }
   }
 
