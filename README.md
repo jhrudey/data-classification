@@ -7,3 +7,6 @@ bivtooltext.Rmd
 * this tool also utilizes bootstrap functionality, which one can download and use locally, as done with this tool through
 bootstrap-4.3.1-dist and jquery-3.3.1.slim.min.js, or one use the boostrap CDN
 * print.min.js was also downloaded locally in order to print the form, but can also be accessed via CDN, npm and so forth
+
+In the text of this document, a specific university name is used because this tool was designed with that university in mind.
+It is of course possible to modify the text in the index.html so that the tool can be utilized by another institute.
